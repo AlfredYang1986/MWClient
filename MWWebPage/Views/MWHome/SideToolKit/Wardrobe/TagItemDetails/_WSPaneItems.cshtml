@@ -1,0 +1,85 @@
+﻿@model IEnumerable<MWWebPage.Models.ItemGroup>
+@using MvcGlobalisationSupport;
+@using MWWebPage.Resources;
+
+@{
+    int tag_item_count = 0;
+    foreach (var it in Model) { tag_item_count += it.items.Count(); }
+}
+@*<div id='W-second-items-tag' data-itemType="item">
+    <label id="WS-itemTags" data-tagid=""></label>
+    <span id="WS-itemNum">@tag_item_count</span>
+    <select id="W-second-items-sortby">
+        <option selected value="Category">@Global.category</option>
+        <option value="Brand">@Global.brand</option>
+        <option value="Time">@Global.time</option>
+    </select>
+</div>
+<div id="W-second-allItems">
+    @foreach (var itemgroup in Model)
+    {
+        
+        <div class="W-second-showItems">
+            <label>@itemgroup.groupKey</label>>><span>@itemgroup.items.Count()</span>
+            <div class="W-second-sortItem">
+                @foreach (var item in itemgroup.items)
+                {
+                    var price = Math.Round(item.price, 2).ToString();
+                    <div class="W-second-eachItem">
+
+                        <div class="W-second-eachItem-img">
+                            <img src="@item.default_pic" alt="@item.title" data-itemSource="" data-itemId="@item.searchable_ItemId" data-brand="@item.brand" data-title="@item.title" data-price="@price" data-like="@item.LikeCount" data-dislike="@item.DislikeCount"/>
+                        </div>
+                        <button class="WS-SetCover-btn">...</button>
+                        <button class="WS-deleteItemTag-btn">X</button>
+                    </div>
+
+                }
+            </div>
+        </div>
+    }
+</div>*@
+
+    <p class="MW-tagName-head">Category Name <span class="MW-tag-numebr">@tag_item_count</span></p>
+    <select id="MW-item-sortBy">
+        <option value="Category">Category</option>
+        <option value="Brand">Brand</option>
+        <option value="Time">Time</option>
+    </select>
+    <div class="MW-line">
+    </div>
+    <button type="button" id="MW-item-select"><img src="" width="16" height="16"><span>SELECT</span></button>
+    <button type="button" id="MW-item-add"><img src="" width="16" height="16"><span>ADDTO</span></button>
+    <button type="button" id="MW-item-delete"><img src="" width="16" height="16"><span>DELETE</span></button>
+
+    <div id="change-info">
+        <button type="button" class="btn btn-primary btn-sm btn3d">change</button>
+    </div>
+
+    <button type="button" class="btn home-font MW-tag-btn MW-Simg-prev">^</button>
+    <button type="button" class="btn home-font MW-tag-btn  MW-Simg-next">v</button>
+    
+    @*<div id=" MW-test" style="  margin-left:500px; width:1000px; height:1000px">
+        <div id=" MW-war-item" style="width:550px;height:500px;position:absolute;margin-top:210px">
+            @foreach (var itemgroup in Model)
+            {
+
+                <div>
+                    category:<span>@itemgroup.groupKey</span> <span>@itemgroup.items.Count()</span>
+                    <br>
+                    @foreach (var item in itemgroup.items)
+                    {
+                        <div id="test2" style="display:inline-block; width:150px;height:200px;margin-left:20px;margin-top:10px">
+                            <img src="@item.default_pic" alt="@item.title" data-itemsource="" data-itemid="@item.searchable_ItemId" data-brand="@item.brand" data-title="@item.title" data-price="@item.price" data-like="@item.LikeCount" style="width: 150px; height: 200px; border: 1px,solid,#808080" />
+                        </div>
+                    }
+
+                </div>
+                <br>
+
+
+
+            }
+        </div>
+           
+    </div>*@

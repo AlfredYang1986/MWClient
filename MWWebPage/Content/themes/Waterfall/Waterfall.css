@@ -1,0 +1,442 @@
+﻿/* 
+    Author: Alfred Yang 
+    26 Feb 2014
+*/
+#sort-by {
+    margin-top:150px;
+    z-index:500;
+    display:none;
+}
+.sortby-btn {
+    height: 22px;
+    padding: 0px;
+    background-color: #f6f5f4;
+    border: 1px solid #f6f5f4;
+    border-radius: 2px;
+    font-size: 12px;
+    color:#555555;
+    text-align: center;
+}
+.shift-btn {
+    height: 22px;
+    width: 22px;
+    padding: 0px;
+    margin-left: 6px;
+    border: 1px solid #f6f5f4;
+    border-radius: 4px;
+    font-size: 12px;
+    text-align: center;
+    background-color: #f6f5f4;
+}
+#searchResults {
+}
+/*@media (max-width: 1280px) {
+    #searchResults {
+        left:0;
+        margin-left:17px;
+    }
+    #sort-by {
+        left:0;
+        margin-left:49px;
+    }
+}*/
+a,img {
+  border:0;
+}
+
+em {
+    font-style: normal;
+}
+
+.hanger-icon {
+}
+.item-share {
+    left:65px;
+    width:18px;
+    height:18px;
+    padding:0px;
+    
+}
+.share-btn {
+    vertical-align:top;
+}
+.title>a {
+  text-decoration:none;
+  cursor:pointer;
+  color:#666666;
+}
+.category-info {
+  margin-top:4px; 
+}
+
+.fl {
+  float:left;
+}
+
+.fr {
+  float:right;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clearfix {
+  display:inline-table;
+}
+
+*html .clearfix {
+  height:1%;
+}
+
+.clearfix {
+  display:block;
+}
+
+*+html .clearfix {
+  min-height:1%;
+}
+
+.demo {
+  width:950px;
+  margin:0 auto;
+}
+
+/* item_list */
+.item_list{
+  position:relative;
+  padding:0 0 0 0;
+}
+
+.item_face {
+  width:220px;
+  background:#fff;
+  /*overflow:hidden;*/
+  margin:15px 0 0 0;
+  /*box-shadow:0 1px 3px rgba(34, 25, 25, 0.2);*/ 
+}
+
+.item_t {
+}
+
+.item_t .img {
+  position:relative;
+  width:100%;
+  margin:0;
+  background-color:transparent;
+}
+
+
+/*.item_t .img a {
+  display:block;
+}*/
+
+/*.item_t .img a:hover {
+  background:#000;
+}*/
+
+/*.item_t .img a:hover img {
+  filter:alpha(opacity=80);
+  -khtml-opacity:0.8;opacity:0.8;
+  -webkit-transition:all 0.3s ease-out;
+  -khtml-transition:all 0.3s ease-out;
+}*/
+/*.item_t .price{
+  position:absolute;bottom:10px;right:0px;background-color:rgba(0, 0, 0, 0.2);color:#FFF;
+  filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#33000000, endcolorstr=#33000000);
+}*/
+
+.item .btns {
+  display:none;
+}
+
+.img_album_btn {
+  top: 0px;
+  right: 0px;
+  position:absolute;
+  background: #ff6fa6;
+  color: #ffffff;
+  height: 20px;
+  line-height: 20px;
+
+  width: 56px;
+  border-radius:3px;
+}
+
+.img_album_btn:hover {
+  color:#fff;
+}
+
+.item_t .title {
+  padding:8px 0;
+  line-height:18px;
+}
+
+.item_b { 
+  /*padding:10px 8px;*/
+  position:relative;
+  background:rgb(255,255,255);
+  background:rgba(255,255,255,0.64);
+  height:35px; 
+  margin-top: -35px;
+}
+
+.item_b .items_likes {
+    margin-right:15px;
+}
+
+.like_btn {
+    background: url("image/white-heart.png") no-repeat;
+    background-size: 100% 100%;
+    float: left;
+    height: 10px;
+    width: 11px;
+    border: 0;
+    padding: 0px;
+    margin-top: 7px;
+    outline: 0;
+}
+
+.unlike_btn {
+    background: url("image/white-heart.png") no-repeat;
+    background-size: 100% 100%;
+    float: left;
+    height: 10px;
+    width: 11px;
+    border: 0;
+    padding: 0px;
+    margin-top: 7px;
+    margin-right: 7px;
+    outline: 0;
+}
+
+.item_b .items_likes em {
+    display: block;
+    float: left;
+    padding: 0px 0px 0px 6px;
+    color: #5f5959;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+.item_c
+{
+    height:29px;
+    text-align:center;
+    background-color: #f0f0f0;
+    z-index: 1;
+    margin-top:2px;
+}
+
+
+/* more */
+#more {
+  display:block;
+  margin:10px auto 20px;
+}
+
+/* infscr-loading */
+#infscr-loading {
+  bottom:-10px;
+  left:45%;
+  position:absolute;
+  text-align:center;
+  height:20px;
+  line-height:20px;
+  z-index: 6;
+  width:120px;
+}
+
+/* page */
+.page {
+  display:none;
+  font-size:18px;
+  height:60px;
+  text-align:center;
+  margin:20px 0 0 0;
+}
+
+.page_num a,.page_num span {
+  margin:0 2px;
+  background:url("image/page.png") no-repeat;
+  display:inline-block;
+  width:30px;
+  height:28px;
+  line-height:26px;
+  overflow:hidden;
+}
+
+.page_num a {
+  background-position:-65px 0;
+  color:#FF3333;
+  overflow:hidden;
+}
+
+.page_num .prev { 
+  background-position:1px -33px;
+}
+
+.page_num .unprev {
+  background-position:1px 0;
+  cursor:default;
+}
+
+.page_num .next {
+  background-position:-32px 0;
+}
+
+.page_num .unnext {
+  background-position:-32px -33px;
+  cursor:default;
+}
+
+.page_num .current {
+  background-position:-99px 0;
+  color:#FFFFFF;
+}
+
+.page_num .etc { 
+  background-position:-172px 8px;
+}
+
+/* to_top */
+.to_top a,.to_top a:hover { 
+  background:url("image/gotop.png") no-repeat
+}
+
+.to_top a{
+  background-position:0 0;float:left;height:50px;overflow:hidden;width:50px;position:fixed;bottom:35px;cursor:pointer;right:20px;
+  _position:absolute;
+  _right:auto;
+  _left:expression(eval(document.documentElement.scrollLeft+document.documentElement.clientWidth-this.offsetWidth)-(parseInt(this.currentStyle.marginLeft, 10)||0)-(parseInt(this.currentStyle.marginRight, 10)||20));
+  _top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop, 10)||20)-(parseInt(this.currentStyle.marginBottom, 10)||20)));
+}
+.to_top a:hover {
+  background-position:-51px 0px;
+}
+
+.item-top-btn {
+    display: none;
+    position: absolute; 
+    top: 9px; 
+    left: 9px; 
+    z-index: 1;
+}
+
+.item:hover > .item-top-btn {
+    display: block;
+}
+.item-top-btn > button {
+    position:absolute;
+    background:rgb(255,255,255);
+    background:rgba(255,255,255,0.6);
+    border:none;
+    border-radius:2px;
+
+}
+.hanger {
+    width: 56px;
+    height: 18px;
+    padding: 0;
+}
+.share {
+    width:18px;
+}
+.hanger-number {
+    color: #777777;
+    font-size: 12px;
+    display: inline-block;
+    margin-left: -3px;
+}
+.broken_heart {
+    background-image: url('../Images/broken_heart.png');
+    width: 10px;
+    height: 8px;
+    background-size: 100%;
+    display: inline-block;
+}
+
+.heart {
+    background-image: url('../Images/heart.png');
+    width: 10px;
+    height: 8px;
+    background-size: 100%;
+    display: inline-block;
+}
+
+.item_c:hover > .purchase {
+    display: inline-block;
+    
+}
+
+.item_c:hover > .source {
+    display: none;
+}
+.item_c:hover {
+    background-color:#81cbf4;
+}
+.item_c:hover a {
+    color:#ffffff;
+}
+
+.purchase {
+    display: none;
+    font-size:12px;
+    width:220px;
+}
+.purchase > a{
+    display:block;
+    line-height:28px;
+}
+.source {
+    height:29px;
+    font-size:12px;
+    color:#5f5959;
+}
+.source > span {
+    display:inline-block;
+    line-height:28px;
+    
+}
+.source-icon {
+    border-radius:2px;
+}
+.category {
+    font-size:12px;
+    margin-left:15px;
+}
+.brand {
+    display:inline-block;
+    width:60%;
+    height:35px;
+    line-height:35px;
+    font-size:12px;
+    padding-left:15px;
+    overflow:hidden;
+}
+.price {
+    display:inline-block; 
+    height:35px;
+    line-height:35px;
+    width:37%;
+    text-align:right;
+    font-size:15px;
+    color:#5f5959;
+    padding-right:12px;
+    overflow:hidden;
+}
+.img-cover {
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;
+    /*background-color:rgba(240,240,240,0.1);*/
+}
+.search-details {
+    z-index:500;
+}

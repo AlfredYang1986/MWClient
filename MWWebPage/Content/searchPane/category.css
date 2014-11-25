@@ -1,0 +1,82 @@
+﻿.sub-menu 
+{
+    display: none;
+}
+
+.arrow {
+    display: none;
+    margin-left: -10px;
+    margin-top: 4px;
+    cursor: pointer;        
+}
+
+.btn-group.open, .dropdown-toggle {
+    box-shadow: none !important;
+}
+    
+#shoes:hover > .arrow
+{
+    display: inline-block;
+}
+#dress:hover > .arrow {
+    display: inline-block;
+}
+
+#skirt:hover > .arrow {
+    display: inline-block;
+}
+
+#hat:hover > .arrow {
+    display: inline-block;
+}
+
+#top:hover > .arrow {
+    display: inline-block;
+}
+
+#t-shirt:hover > .arrow {
+    display: inline-block;
+}
+
+#accessories:hover > .arrow {
+    display: inline-block;
+}
+
+#condition-list > .sub-menu
+{
+    display: block;
+}
+
+.open > .btn {
+    font-weight: 700;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #428BCA;
+}
+
+#menu .btn{
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 11px;
+    color: black;
+}
+
+.close
+{
+
+}
+
+.category-link-active 
+{
+    color: #428BCA;
+}
+
+.category-link-hover a:hover
+{
+    color: #428BCA;
+    text-decoration: underline;
+}
+
+.category-Selected 
+{
+    color: #428BCA;
+}

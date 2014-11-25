@@ -1,0 +1,6 @@
+﻿@model MWWebPage.Models.TagNumber
+
+@for (int index = 0; index < @Model.totalPage; index++)
+{
+    <li data-target="#myCarousel" data-slide-to='@index' data-number="@Model.totalPage" class="active"></li>
+}

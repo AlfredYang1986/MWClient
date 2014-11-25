@@ -1,0 +1,77 @@
+﻿@model MWWebPage.Models.HomeModelContext
+
+@using MvcGlobalisationSupport;
+@using MWWebPage.Resources;
+
+<div id="menu"  class="fix-to-top">
+    <div>
+        <button class="btn btn-link" style="outline: 0" id="MenuGender">@Global.gender</button>
+        <button class="btn btn-link" style="outline: 0" id="MenuCategories">@Global.capCategory</button>
+        <button class="btn btn-link" style="outline: 0" id="MenuBrands">@Global.capBrand</button>    
+        <button class="btn btn-link" style="outline: 0" id="MenuBudget">@Global.capBudget</button>
+        <button class="btn btn-link" style="outline: 0" id="MenuColor">@Global.capColor</button>
+        <button class="btn btn-link" style="outline: 0" id="MenuTags">@Global.capTag</button>
+        <button class="btn btn-link" style="outline: 0" id="MenuConditions">@Global.capSelected</button>
+	    @*<button class="btn btn-link" style="outline: 0" id="MenuClear">@Global.capClear</button>*@
+        @Html.Partial("HomeMenu/_HomeMenuCategory", Model)
+
+        <div id="Budget" style="width:450px; margin-left:30px" >
+            <div id="slider" style="margin-top:25px;"></div>      
+        </div>
+        <div id="Conditions" style="">
+            <button class="btn btn-link" style="" id="MenuClear">
+                @Global.capClear
+            </button>
+            <div class="condition-select" style="">
+            </div>
+        </div>
+        <div id="Tags" style="display:none;">
+                <div class="dropdown" style="display:inline-block;">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                        Category
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Top</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Shoe</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Skirt</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown" style="display:inline-block">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                        Brand
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Saba</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">H&M</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">LV</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown" style="display:inline-block">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                        Gender
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Male</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Female</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Other</a></li>
+                    </ul>
+                </div>
+                <div style="display:inline-block;position: relative; ">
+                    <label style="position: relative; left: 9px;font-weight: 500;">$</label>
+                    <input type="text" value="10" style="width:50px; padding-left: 12px; height: 24px; line-height: 22px; margin-left: -8px;">
+                    <label style="position: relative; left: 9px;font-weight: 500;">$</label>
+                    <input type="text" value="100" style="width:50px; padding-left: 12px; height: 24px;line-height: 22px; margin-left: -8px;">
+                </div>
+        </div>
+        <div id="Gender" style="display:none;margin-left:15px;">
+            <a>Male</a>
+            <a style="margin-left:15px">Female</a>
+        </div>
+        @Html.Partial("HomeMenu/_HomeMenuBrand", Model.BrandModel)
+        @Html.Partial("HomeMenu/_HomeMenuBrand")
+        @Html.Partial("HomeMenu/_HomeMenuColorPicker")
+    </div>
+</div>

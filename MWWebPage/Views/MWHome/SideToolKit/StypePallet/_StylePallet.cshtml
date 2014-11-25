@@ -1,0 +1,117 @@
+﻿@using MvcGlobalisationSupport;
+@using MWWebPage.Resources;
+
+<div id="Sp-Pane" class="fix-to-top" >
+    <div>
+        <div id="Sp-Pane-Top-Button" class="The-style-palette-topbutton">
+        <button id="The-SP-button-list" type="button" class="home-font resize-font">
+            <img src="~/Images/home/list.svg" width="13" height="16"/>
+            <span> @Global.list</span>
+        </button>
+
+        <div class="dropdown" style="display:inline-block; ">
+            <button id="The-SP-button-AFW" type="button" class="dropdown-toggle home-font resize-font"  data-toggle="dropdown" style="" onclick="$('#myPic').click();">
+                <img src="~/Images/home/add pic2.svg" width="13" height="16" />
+                <span>@Global.addFromPC</span>
+            </button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="The-SP-button-AFW">
+                <li id="Add-from-PC" role="presentation"><a role="menuitem" tabindex="-1" href="#">@Global.addFromPC</a></li>
+                <li id="Add-from-MW" role="presentation"><a role="menuitem" tabindex="-1" href="#">@Global.addFromMW</a></li>         
+            </ul>
+        </div>
+        @*this part is for upload image*@
+        @*<input id="myPic" name="file" type="file" onchange="getImgURL(this);" style="position:absolute;left:-10000px;top:-10000px;">*@
+        <div class="mark" style="display:none;">
+
+        </div>
+
+        @*------------------------------------*@
+        <button id="The-SP-button-recommend" type="button" class="home-font resize-font" >
+            <img src="~/Images/home/recommend.svg" width="13" height="16" />
+            <span>@Global.recommand</span>
+        </button>
+        <button id="The-SP-button-image" type="button" class="home-font resize-font" style="display:none;">
+            <img src="~/Images/home/image.svg" width="13" height="16" />
+            <span>@Global.image</span>
+        </button>
+    </div>
+    </div>
+    <div id="SP-list" class="The-style-palette-list">
+
+    </div>
+
+    <div id="The-style-palette-addfromwardrobe">
+
+    </div>
+
+    @*<div id="va-accordion" class="The-style-palette-recommend">
+
+        <div class="va-nav">
+            <span class="va-nav-prev">Previous</span>
+            <span class="va-nav-next">@Global.next</span>
+        </div>
+        <div class="va-wrapper">
+
+            <div class="va-slice va-slice-1">
+                <div class="va-content">
+                    <ul>
+                        <li><a href="#">@Global.add</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="va-slice va-slice-2">
+                <div class="va-content">
+                    <ul>
+                        <li><a href="#">@Global.add</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="va-slice va-slice-3">
+                <div class="va-content">
+                    <ul>
+                        <li><a href="#">@Global.add</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="va-slice va-slice-4">
+                <div class="va-content">
+                    <ul>
+                        <li><a href="#">@Global.add</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="va-slice va-slice-5">
+                <div class="va-content">
+                    <ul>
+                        <li><a href="#">@Global.add</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="va-slice va-slice-6">
+                <div class="va-content">
+                    <ul>
+                        <li><a href="#">@Global.add</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="va-slice va-slice-7">
+                <div class="va-content">
+                    <ul>
+                        <li><a href="#">@Global.add</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>*@
+    <div style="width:100%;position:absolute;bottom:0px;">
+        <button id="The-style-palette-shot" class="btn btn-default"><i class="glyphicon glyphicon-camera"></i>@Global.shot</button>
+    </div>
+</div>

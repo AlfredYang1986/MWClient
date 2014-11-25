@@ -1,0 +1,22 @@
+﻿@model IEnumerable<MWWebPage.Models.OutfitInfo>
+@using MvcGlobalisationSupport;
+@using MWWebPage.Resources;
+
+<div id='W-All-items-tag'>
+    <label id="WS-itemTags" data-tagid="All">@Global.capAll</label><span>@Model.Count()</span>
+</div>
+<div id="W-All-ListItems">
+    <div id='W-All-items-button' class='btn-group'>
+        <button><i class="glyphicon glyphicon-list-alt"></i>@Global.capDelete</button>
+        <button><i class="glyphicon glyphicon-align-justify"></i>@Global.capMoveTo</button>
+        <button><i class="glyphicon glyphicon-align-justify"></i>@Global.save</button>
+    </div>
+    <div id="W-All-AllItems">
+        @foreach (var outfit in Model)
+        {
+            <div class="W-All-eachOutfit">
+                <img src="@outfit.outfitPic" alt="" />
+            </div>
+        }
+    </div>
+</div>

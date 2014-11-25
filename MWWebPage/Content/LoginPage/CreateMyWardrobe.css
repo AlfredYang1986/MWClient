@@ -1,0 +1,238 @@
+﻿#createMyWardrobe {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#my-wardrobe-popup{
+    position: absolute;
+    width: 344px;
+    height: 617px;
+    top: 50%;
+    margin-top: -360px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.regist-font {
+    font-family:'Century Gothic';
+}
+#create-wardrobe-popup{
+    width:344px;
+    height:517px;
+    background-color:rgba(255,255,255,0.9);
+    border:1px solid #fff;
+    border-bottom:none;
+    border-radius:10px;
+}
+#sign-facebook-popup{
+    width:344px;
+    height:100px;
+    background-color:rgba(255,255,255,0.9);
+    border:1px solid #fff;
+    border-top:none;
+    border-radius:10px;
+}
+#my-wardrobe-popup-heading{
+    margin-top:37px;
+    color:#111111;
+    font-size:15px;
+    letter-spacing:0.05em;
+}
+
+.x-button {
+    position: absolute;
+    top: 6px;
+    right: 15px;
+    width: 20px;
+    height: 20px;
+    padding: 0px;
+    background-color: transparent;
+    font-family: 'Century Gothic';
+    font-size: 14px;
+    color: #111111;
+}
+
+.my-wardrobe-popup-label {
+    width:235px;
+    font-family: 'Century Gothic';
+    font-weight: 400;
+    padding-right: 0;
+    margin-left: 57px;
+    margin-bottom: 3px;
+    color:#555555;
+    font-size: 13px;
+}
+.close-button {
+    margin-top: 6px;
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+    padding: 0px;
+    background-color: #fff;
+}
+#date{
+	margin-left:auto;
+    margin-right:auto;
+    width:244px;
+    height:32px;
+}
+#date > div{
+    display:table-cell;
+    width:33%;
+}
+
+.input-change {
+    width: 244px;
+    height: 32px;
+    border-radius: 0px;
+    border: 1px solid #555;
+    color: #444444;
+    font-size:13px;
+    padding: 0 0 0 7px;
+}
+.change-gap-height{
+	margin-bottom:3px;
+}
+.select-change {
+    width: 244px;
+    height: 32px;
+    border-radius: 0px;
+    border: 1px solid #555;
+    font-size:13px;
+    color: #444444;
+    padding: 0 0 0 3px;   
+    appearance:none;
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance: none;
+}
+.select-birthday {
+    width: 244px;
+    width: 32px;
+    border: none;
+}
+.modify-day-year {
+    width: 74px;
+    height: 32px;
+    border-radius: 0px;
+    color: #444444;
+    border: 1px solid #555;
+    font-size: 13px;
+    padding: 6px 17px;
+    appearance:none;
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance: none;
+}
+.modify-month {
+    margin-left: 11px;
+    margin-right: 11px;
+}
+  
+.text-on-button{
+    font-family:'Century Gothic';
+    color:#ffffff;
+    font-size:13px;
+}
+.text-on-button-signfacebook {
+    font-family: 'Century Gothic';
+    color: #ffffff;
+    margin-right: 16px;
+    font-size: 13px;
+    vertical-align: bottom;
+}
+
+.text-agreepolicy {
+    width: 244px;
+    margin-top: -1px;
+    margin-left: 49px;
+    line-height: 13.5px;
+    -webkit-text-size-adjust:none;
+    font-size: 12px;
+    text-align:justify;
+    color: #555555;
+    font-family: 'Century Gothic';
+}
+.change-button1 {
+    width: 264px;
+    height: 32px;
+    margin-top: 24px;
+    background-color: #555555;
+    border-radius: 10px;
+    padding: 0px;
+}
+.change-button2{
+    width:264px;
+    height:32px;
+    margin-top:-10px;
+    background-color:#3b5998;
+    border-radius:10px;
+    padding:0px;
+    
+}
+.text-bussiness-design {
+    font-size: 12px;
+    text-align: right;
+    margin-right: 50px;
+    margin-top: -2px;
+    line-height: 14px;
+}
+.text-bussiness-design > a{
+    color:#555555;
+    text-decoration: none;
+}
+.text-login{
+    margin-right:50px;
+    margin-top:15px;
+    margin-bottom:11px;
+    color:#555555;
+    font-size:12px;
+    
+}
+.text-login > a{ 
+    color:#555555;
+    text-decoration: none;
+}
+.dotted-line {
+    width: 303px;
+    height: 1px;
+    border-top: 1px #555555 dotted;
+    
+}
+#iconfacebook{
+	position:relative;
+  	left:-10px;
+   
+}
+.Hiddenlable {
+    visibility:hidden;
+}
+
+.required-input {
+    border-color:#ee5858 !important;
+    color:#ee5858 !important;
+}
+.required-select {
+    border-color:#ee5858 !important;
+}
+.regist-login-with {
+    font-size:13px;
+    color:#555555;
+    margin-right:50px;
+}
+.regist-login-with > img {
+    border-radius:5px;
+}
+#regist-tip-email {
+    font-size:12px;
+    display:none;
+}
+#regist-tip-password {
+    font-size:12px;
+    display:none;
+}
+@media(max-height:768px) {
+    #my-wardrobe-popup{
+    top:0;
+    margin-top:26px;
+}
+}

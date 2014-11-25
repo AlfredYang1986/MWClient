@@ -1,0 +1,81 @@
+﻿/**
+ * Css for rotate (paper folding effect)
+ * Created by Alfred Yang
+ * 7th April, 2014
+ */
+
+.rotate-div
+{
+    position: absolute;
+    top: 80px;
+    left: 0px;
+}
+
+.rotate-img
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+.rotate-temp-bottom
+{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.rotate-transparent-ver
+{
+    opacity: 1;
+    width: 100%;
+    height: 50%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.rotate-content-ver
+{
+    width: 100%;
+    height: 50%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.rotate-temp-right
+{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.rotate-transparent-hor
+{
+    clear: both;
+    float: left;
+    opacity: 1;
+    width: 50%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.rotate-content-hor
+{
+    /*float: right;*/
+    width: 50%;
+    height: 100%;
+    margin-top: 0px;
+    padding: 0px;
+}
+
+.rotate-hide
+{
+    display: none;
+}
+
+.rotate-show
+{
+    display: block;
+}

@@ -1,0 +1,12 @@
+﻿@model IEnumerable<MWWebPage.Models.Tags>
+@using MvcGlobalisationSupport;
+@using MWWebPage.Resources;
+
+<span>Choose a tag</span>
+<select id="selectedTag">
+    
+    @foreach (var tag in Model)
+    {
+        <option value="@tag.tagId">@tag.tagName</option>
+    }
+</select>

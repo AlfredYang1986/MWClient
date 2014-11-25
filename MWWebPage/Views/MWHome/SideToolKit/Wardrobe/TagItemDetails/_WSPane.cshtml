@@ -1,0 +1,80 @@
+﻿@using MvcGlobalisationSupport;
+@using MWWebPage.Resources;
+
+<div id="W-second-modal" class="modal fade" tabindex="-1" role="dialog" style="background-color: #cecece; background-color: rgba(206,206,206,0.64);">
+    <div id='W-second-popup' class="center-block">
+        <button type="button" class="btn  pull-right W-second-CB" id="close-WardrobePopup" data-dismiss="modal"><span>X</span></button>
+        <div id='W-second' class='center-block'>
+            <div id='W-second-top'>
+                <div id='W-second-tags'>
+                    <div><button id="W-second-LB"><</button></div>
+                    <div id="recreate-WS-scroll">
+                    </div>
+                    <div><button id="W-second-RB">></button></div>
+                </div>
+                <div class="btn-group W-second-SOB pull-right">
+                    <button id="WS-SingleItem-btn">@Global.mwSingleItem</button>
+                    <button id="WS-Outfit-btn">@Global.mwOutFit</button>
+                </div>
+            </div>
+            <div id='W-second-left'>
+                <div class='W-second-left-img'>
+                    <div id="WS-left-img-div">
+                        <img id="WS-left-img" src="" alt="..." />
+                    </div>
+                    <div id="W-second-left-img-btn"><button>...</button></div>
+                    <div id="W-second-left-img-info">
+                        <div class="WS-ImgInfo">
+                            <span id="WS-Left-Title">@Global.title</span>
+                            <div id="WS-like-button" class="WS-items_likes" data-itemid=>
+                                <button id="WS-unlike" class="WS-unlike-btn"></button>
+                                <button id="WS-like" class="WS-like-btn"></button>
+                                <em class="WS-bold">0</em>
+                            </div>
+                        </div>
+                        <div class="WS-ImgInfo" style="margin-top: 6px;">
+                            <span id="W-second-left-img-brand">@Global.brand</span>
+                            <div class="WS-items_likes">
+                                <span>$<span id="WS-price">Price</span></span>
+                            </div>
+                        </div>
+                        <button id="WS-ImgInfo-btnSrc"><img src=".." alt=".." />@Global.source</button>
+                        <button id="WS-ImgInfo-btnBuy">@Global.purchase</button>
+                    </div>
+                </div>
+                <div >
+
+                </div>
+            </div>
+            <div id="W-second-outfit-left">
+                <div id="W-second-small-outfit-items">
+                    @for (int i = 0; i < 3; i++)
+                    {
+                        for (int j = 0; j < 3; j++)
+                        {
+                            <div id="W-second-small-outfit-item"></div>
+                        }
+                    }
+                </div>
+                <div id="W-second-oufit-info"></div>
+            </div>
+            <div id='W-second-right' class="pull-right">
+                <div id='W-second-items'>
+                </div>
+            </div>
+            <div id="W-second-outfilt-right">
+                <div id="W-second-outfit-bigtagname">
+                   <span id="outfit-tag-name"> PARTY STUFF</span>
+                   <span id="outfit-tag-number">28</span>
+                   <span id="outfit-sortby"></span>
+                </div>
+                <div id="W-second-outfit-bigimages">
+                    <div class="W-second-outifit-bigimage"></div>
+                    <div class="W-second-outifit-bigimage"style="margin-left:10px"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@Html.Partial("SideToolKit/Wardrobe/TagItemDetails/_WardrobeMoveToTags")

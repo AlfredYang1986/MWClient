@@ -1,0 +1,53 @@
+﻿@model MWWebPage.Models.HomeModelContext
+
+@using MvcGlobalisationSupport;
+@using MWWebPage.Resources;
+
+@foreach (var item in Model._items)
+{
+    var price = (item.DiscountPrice == "-1") ? Math.Round(item.Price, 2).ToString() : item.DiscountPrice;
+    <div class="item item_face  @Model.WaterfallHelper.CurrentPage" data-source="@item.ItemId" data-cat="@item.Category" data-like="@item.LikeCount" data-color="@item.Color" data-sourceName="@item.SourceName" data-click="False" style="position: absolute; display: none;">
+        <div class="item-top-btn">
+            <button class="hanger">
+                <img class="hanger-icon" src="~/Images/home/collect.svg" height="15" width="18">
+                <span class="hanger-number">1999</span>
+            </button>
+            <button class="item-share">
+                <img class="share-btn" src="~/Images/home/share.svg" height="16" width="16" style="vertical-align:sub">
+            </button>
+        </div>
+
+            <div class="item_t" style="z-index: 10;">
+                <div class="img">
+                    <img class="search-details @Model.WaterfallHelper.CurrentImg" alt="Alfred's Demo" src="@Url.Content(@item.ImgUrl)" />
+                    <div class="img-cover"></div>
+                </div>
+            </div>
+
+            <div class="item_b clearfix">
+                <div class="title category-info">
+                        @*<span class="category home-font resize-font" data-sort="@item.Category">@item.Category</span>*@
+                        <div class="items_likes" style="float: right; display:none ">
+                            @*<button  class="unlike_btn"></button>*@
+                            @*<button  class="like_btn"></button>*@
+                            <em class="bold resize-font">@item.LikeCount</em>
+                        </div>
+                    </div>
+                @*<div class="title" >*@
+                <span class="brand home-font resize-font" data-sort="@item.Brand">@item.Brand</span>
+                <span class="price home-font resize-font" data-sort='@item.Price' style=""> $@price </span>
+                @*</div>*@
+            </div>
+
+            <div class="item_c clearfix">
+                <div class="source">
+                    <img class="source-icon" src="#" alt="#" width="22" height="22" />
+                    <span class="home-font" data-name="source">@item.SourceName</span>
+                </div>
+                <div class="purchase">
+                    <a class="home-font" target="_blank" href="@item.ItemUrl">@Global.purchase</a>
+                </div>
+            </div>
+        </div><!--item end-->
+    }
+}

@@ -1,0 +1,456 @@
+#Pf-Pane{
+	position:absolute;
+    top:66px;
+    right:3px;
+    /*width:425px; 
+	height:690px;*/
+    width: 33.3%;
+    height: 91.5%;
+    background-color:#fcfcfc;
+    border-left:6px solid #F3F3F1;
+	border-bottom:15px solid #F3F3F1;
+    font-family:Verdana;
+    display:none;
+    z-index:16;
+}
+
+#Pf-Pane-Top-Button {
+    /*margin-top: 55px;
+    margin-left:65px;*/
+    margin-top: 14%;
+    width: 330px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#Pf-Pane-Top-Button span{
+    display:inline-block;
+    font-size:13px;
+    margin-right:3px;
+    vertical-align:text-top;
+    
+}
+#Pf-Pane-Top-Button > button {
+    margin-left:6px;
+    margin-right:6px;
+}
+#Pf-Pane-Top-Button img {
+    vertical-align:top;
+}
+.profile-option-btn {
+    padding:0px;
+} 
+#profile_btn {
+	background:none; 
+    border:none;        
+    font-size:12px;
+}
+
+/*#profile_btn:hover {
+    color:#33CCFF;
+}*/
+
+#profile_form {
+    margin-top: 14px;
+    /*margin-left: 20px;*/
+}
+
+#upload_pic {
+    position: absolute;
+    left: 50%;
+    margin-top: -230px;
+    margin-left: 70px;
+}
+.priflie_UserImg {
+    width:120px;
+    height:120px;
+}
+
+#setting_btn {
+	background:none; 
+    border:none;        
+    font-size:12px;
+}
+#help_btn {
+	background:none; 
+    border:none;      
+    font-size:12px;
+}
+#logout_btn {
+	background:none; 
+    border:none;       
+    font-size:12px;
+}
+.active_color {
+    color:#4fbbf9;
+}
+
+.active_detail_color {
+    background-color: #808080;
+}
+.profile_form_changemargin {
+    margin-bottom:7px;
+}
+#profile_info {
+    /*margin-top: 32px;*/
+    margin-top: 7.67%;
+    width: 385px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#priflie_info_group {
+    /*margin-left:32px;*/
+}
+
+#profile_edit_btn {
+    background:none; 
+    border:none; 
+    outline:none;
+    margin-left:33px;
+    font-size:12px;
+}
+
+#profile_save_btn {
+    margin-left:5px;
+}
+
+#profile_cancel_btn {
+}
+#profile_birth {
+   display:inline-block ;
+   vertical-align:bottom;
+}
+#profile_birth > select{
+  display:table-cell;
+  width:38px;
+  padding:0;
+  border:none;
+  background:none;
+  outline:none;
+  -webkit-appearance:none;
+  height:23px;
+  float:left;
+}
+.margin_input {
+    width:145px;
+    height:25px;
+    margin-left:15px;
+    font-size:13px;
+    color:#b3b3b3;
+    padding-left:14px;
+}
+
+.border_modify {
+    background-color:transparent;   
+    border: 0px;
+    outline:none;     
+}
+.margin_text_center {
+    vertical-align:middle;
+}
+
+.profile_label {
+    border: none;
+    outline: none;
+    background-color: #d1d1d1;
+    color: #a2a2a2;
+    height: 28px;
+    width: 71px;
+    margin:0px;
+    line-height: 28px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: normal;
+}
+.profile_social_div {
+    margin-top:10px;
+}
+.profile_social_div label {
+    margin-bottom:0px
+}
+.profile_social_label {
+    width:110px;
+    font-size:13px;
+    font-weight:normal;
+}
+.profile_social_icon {
+    width:22px;
+    height:22px;
+    margin-right:14px;
+}
+.profile_SW_label {
+    border:none;
+    outline:none;
+    background-color: #F3F3F3;
+    text-align:center;
+    font-size:12px;
+    font-weight:normal;
+    color: #A2A2A2;
+    width:125px;
+    height:28px;
+    line-height:28px;
+   
+}
+.profile_info_label {
+    width:80px;
+    font-weight:normal;
+    font-size:13px;
+    text-align:right;
+}
+#gender_option {
+    -webkit-appearance:none;
+}
+/*#nick_name {
+    background-color:transparent;   
+    border: 0px;
+    outline:none;
+}*/
+
+#profile_social {
+    /*margin-top: 43px;*/
+    /*margin-left: 32px;*/
+    margin-top:8%;
+}
+#facebook_profile {
+}
+.switch_button_input {
+    width:120px;
+    margin-right:30px;
+}
+#setting_info {
+  	width:360px; 
+	height:565px;
+  	/*margin-left:30px;*/
+    margin-top: 45px;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+#setting_noti {
+    width:360px;
+    height: 170px;
+    margin-top:110px;
+    /*border: 1px solid yellow;*/
+}
+
+
+.setting_info_label {
+    border:none;
+    outline:none;
+    background-color: #d1d1d1;
+    color: #a2a2a2;
+    height:28px;
+    width: 108px;
+    margin-left:6px;
+    line-height:28px;
+    text-align:center;
+    font-size:12px;
+    font-weight:normal;
+}
+#notification_label {
+    background-color:#f3f3f3;
+    color: #a2a2a2;
+}
+#setting_detail {
+    margin-top :12px;
+}
+.setting_detail_label {
+    font-weight:normal;
+    font-size:13px;
+    width:65px;
+    text-align :right;
+}
+.setting_input {
+    border:none;
+    outline:none;
+    background-color:transparent;
+    font-size:13px;
+    margin-left :15px;
+    color:#b3b3b3;
+}
+.setting_detail_PSW {
+    margin-top:10px;
+}
+#change_password {
+    margin-top :8px;
+}
+.change_password_div {
+    margin-bottom:6px;
+}
+.change_password_label {
+    font-size :13px;
+    font-weight:normal;
+    width:132px;
+    text-align :right;
+}
+.change_password_input {
+    height :20px;
+}
+#change_pswd_btn {
+    border:none;
+    outline:none;
+    background-color:transparent;
+    font-size: 13px;
+}
+#password_cancel_btn {
+    margin-left:145px;
+    width:65px;
+    background-color: #E6E6E6;
+}
+#password_save_btn {
+    width:60px;
+}
+.password_btn {
+    border:none;
+    outline:none;
+    font-size:13px;
+    background-color: #4FBBF9;
+    height:24px;
+    border-radius:5px;
+    margin-top:7px;
+    margin-right:8px;
+    margin-left :10px;
+    color:#FFFFFF;
+}
+    .password_btn:active {
+        background-color: #33CCFF;        
+    }
+#switch_delete_div {
+    margin-left :-20px;
+    margin-top :11px;
+}
+#switch_ask_div {
+    margin-left :-20px;
+    margin-top :13px;
+}
+#switch_pswd_change_div {
+    margin-left :-20px;
+    margin-top :13px;
+}
+#upload {
+    border:none;
+    outline:none;
+    background-color:transparent;
+    font-size:12px;
+    padding:0px;
+    margin-top:5px;
+}
+
+#upload:active {
+    color:#4fbbf9;
+}
+.pf-edit-btn {
+    background-color:#a4a3a1;
+    color:#ffffff;
+    border:none;
+    width:65px;
+    height:24px;
+    border-radius:2px;
+    font-size:12px;
+    display:none;
+}
+.profile_social_label {
+}
+.social-switch {
+    visibility:hidden;
+}
+#help_info {
+    background-color:rgba(206,206,206,0.64);
+}
+#help-info-content {
+    position:absolute;
+    width: 1080px;
+    height: 700px;
+    top: 50%;
+    margin-top: -350px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:white;
+}
+#help-info-wrap {
+    padding:15px;
+}
+#help-info-left {
+    width:260px;
+    height:680px;
+    float:left;
+}
+#help-info-right{
+    width:760px;
+    height:640px;
+    float:left;
+    overflow:auto;
+}
+#help-info-right .line {
+    width: 680px;
+    height: 1px;
+    background-color: #000000;
+}
+#help-info-nav {
+    position:absolute;
+    top:25%;
+    z-index: 15;
+    list-style: none;
+    opacity:1;
+}
+
+#help-info-nav  li {
+    display:block;
+    width:14px;
+    height:14px;
+    margin:7px;
+}
+#help-info-nav  a {
+    display: block;
+    position:relative;
+    z-index:1;
+    width: 100%;
+    height: 100%;
+    cursor:pointer;
+    text-decoration: none;
+}
+#help-info-nav li a .dot {
+    position:absolute;
+    z-index:1;
+    top: 5px;
+    left:5px;
+    width: 4px;
+    height: 4px;
+    cursor: pointer;
+    background-color: #000000;
+    border: 2px solid #000000;
+    border-radius: 2px;
+}
+#help-info-nav li a .dot-active {
+    top: 2px;
+    left:2px;
+    width:10px;
+    height:10px;
+    background-color:transparent;
+    border: 2px solid #000000;
+    border-radius: 5px;
+}
+#help-info-nav .index-pointer-tip {
+    position: absolute;
+    top: -3px;
+    left:12px;
+    padding-left: 10px;
+    width: 140px;
+    font-family:'Century Gothic';
+    color: #000000;
+    font-size:12px;
+    text-align: left;
+}
+#help-info-guide {
+    display:none;
+}
+#help-info-privacy {
+    display:none;
+}
+#help-info-policy {
+    display:none;
+}
+#help-info-right .active{
+    display:block;
+}

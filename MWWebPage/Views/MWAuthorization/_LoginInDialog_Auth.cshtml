@@ -1,0 +1,50 @@
+﻿@using MvcGlobalisationSupport;
+@using MWWebPage.Resources;
+<div id="myModal" class="modal" tabindex="-1" role="dialog">
+    <div id="login-popup" class="">
+        <div id="login-popup-heading">
+            <button type="button" class="close-btn pull-right" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <p class="Login-title">
+                @Global.snwLogin
+            </p>
+            <div class="login-social-btn">
+                <img src="../../Images/Login/facebook_icon.jpg" alt="" width="28" height="28" style="" />
+                <img src="../../Images/Login/Twitter.png" alt="" width="28" height="28" style="" />
+            </div>
+        </div>
+
+        <div id="login-popup-content">
+            <div class="dotted-line-login center-block"></div>
+            <p class="text-tips-Login regist-font"> @Global.thirdLogin @Global.email</p>
+            <form action="/">
+                <p class="login-incorrect-tips regist-font">@Global.loginError</p>
+                <label class="control-label  my-wardrobe-popup-label Hiddenlable" style="margin-left: 48px; margin-top: 5px;">
+                    @Global.email
+                </label>
+                <input id="login-email" type="email" class="form-control  Login-input" placeholder="@Global.email" />
+                <label class="control-label  my-wardrobe-popup-label Hiddenlable" style="margin-left:48px;margin-top:5px;">
+                    @Global.password
+                </label>
+                <input id="login-password" type="password" class="form-control Login-input" placeholder="@Global.password" />
+
+                <div class="checkbox popup-group-input regist-font">
+                    <input id="reme" checked="checked" type="checkbox" class="popup-group-checkbox" />
+                    <p class="checkbox-text">@Global.rememberMe</p>
+                </div>
+
+                <div class="login-group regist-font">
+                    <div class="login-text-tips">
+                        <a id="forgotLogin" href="#">@Global.forgetPwd</a>
+                        <a id="createLogin" href="#" style="">@Global.createAccount</a>
+                    </div>
+                    <button class="login-button btn">@Global.login</button>
+                </div>
+                <p class="regist-font bizInfo resize-font">
+                    @Global.busOrDes
+                    <br />
+                    <a href="#">@Global.startHere</a>
+                </p>
+            </form>
+        </div>
+    </div>
+</div>

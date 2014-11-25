@@ -1,0 +1,39 @@
+﻿@model IEnumerable<MWWebPage.Models.Tags>
+@using MvcGlobalisationSupport;
+@using MWWebPage.Resources;
+
+<div class="active item" style="height:100%;">
+
+    <div class="mywardrobe">
+        <div style="width:30%; display:inline-block; margin-top:12%">
+            <div class="create-tag">
+                <p class="home-font resize-font"> @Global.createNewTag</p>
+            </div>
+        </div>
+        <div style="width:30%; display:inline-block;">
+            <div class="tags-gap div-relative default-tags allTag">
+                <p class="home-font regist-font">GARMENT STREAM</p>
+            </div>
+        </div> 
+        @for (int index = 0; index < @Model.Count(); ++index)
+        {
+            
+            <div style="width:30%; display:inline-block; margin-top:12%">
+            <div class="circle tags-gap div-relative center-block" data-picurl="@Model.ElementAt(index).picUrl" data-tagtype="@Model.ElementAt(index).tagType" data-tagid="@Model.ElementAt(index).tagId" data-clickindex=@index style="background-image: url(@Model.ElementAt(index).picUrl); background-size: 100% 120%; ">
+                <div class="">
+                </div>
+                <div class="delete-btn" >
+                    <p class="home-font resize-font">x</p>
+                </div>
+                <textarea class="home-font resize-font"  rows="2" cols="10" maxlength="16" disabled="disabled" onfocus="this.style.textAlign = 'left'" onblur="this.style.textAlign = 'center'">@Model.ElementAt(index).tagName</textarea>
+            </div>
+            </div>
+            if (index == 6)
+            { break; }
+        }
+
+    </div>
+</div>
+
+
+

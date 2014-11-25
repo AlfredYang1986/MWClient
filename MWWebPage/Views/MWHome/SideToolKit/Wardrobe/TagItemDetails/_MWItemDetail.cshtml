@@ -1,0 +1,134 @@
+﻿@using MvcGlobalisationSupport;
+@using MWWebPage.Resources;
+
+<div class="modal" id="MW-tag-detail" tabindex="-1" role="dialog">
+    <div class=" modal-dialog" id="MW-detailes">
+    <button type="button" id="MW-close-btn" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+    <div class="MW-tags">
+        <div class="MW-carouse-tag">
+            <ul class="slides"></ul>
+        </div>
+    </div>
+    <button type="button" class=" MW-Tag-prev home-font MW-tag-btn"><</button>
+    <button type="button" class=" MW-Tag-next home-font MW-tag-btn">></button>
+    <button type="button" class="SingleItem-btn btn home-font">@Global.mwSingleItem</button>
+    <button type="button" class="Outfit-btn btn home-font">@Global.mwOutFit</button>
+    <div id="MW-Single-Item">
+        <div id="Single-Item-BImg"></div>
+        <div id="Single-Item-SImg">
+            <div class="MW-carouse-item">
+                <ul class="slides">
+                    <li class="slide"><img src="http://nyromodal.nyrodev.com/img/img2.jpg" alt="" width="80" height="80"></li>
+                    <li class="slide"><img src="http://nyromodal.nyrodev.com/img/img2.jpg" alt="" width="80" height="80"></li>
+                    <li class="slide"><img src="http://nyromodal.nyrodev.com/img/img2.jpg" alt="" width="80" height="80"></li>
+                    <li class="slide"><img src="http://nyromodal.nyrodev.com/img/img2.jpg" alt="" width="80" height="80"></li>
+                    <li class="slide"><img src="http://nyromodal.nyrodev.com/img/img2.jpg" alt="" width="80" height="80"></li>
+                    <li class="slide"><img src="http://nyromodal.nyrodev.com/img/img2.jpg" alt="" width="80" height="80"></li>
+                    <li class="slide"><img src="http://nyromodal.nyrodev.com/img/img2.jpg" alt="" width="80" height="80"></li>
+                    <li class="slide"><img src="http://nyromodal.nyrodev.com/img/img2.jpg" alt="" width="80" height="80"></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="MW-item-detaile"></div>
+        <div class="MW-item-upload-detaile">
+            <form action="">
+                <input type="text" class="MW-item-tagName" placeholder="@Global.capTag" value="tag1 tag2 tag3">
+                <div style="margin-top:2px">
+                    <input type="text" class="MW-item-category" value="category" placeholder="@Global.capCategory">
+                    <input type="text" class="MW-item-color" value="color" placeholder="@Global.capColor">
+                </div>
+                <div style="margin-top:2px">
+                    <input type="text" class="MW-item-brand" value="brand" placeholder="@Global.capBrand">
+                    <input type="text" class="MW-item-price" value="price" placeholder="price">
+                </div>
+                <div>
+                    <textarea class="MW-item-source" rows="1">@Global.source</textarea>
+                </div>
+                <textarea class="MW-item-descript" rows="2">@Global.discription</textarea>
+            </form>
+        </div>
+        <div class="MW-item-search-detaile">
+            <form action="#">
+                <p class="Mw-item-tagName">tag1 tag2 tag3</p>
+                <p class="MW-item-search-cat">
+                    @Global.category
+                    <span class="MW-like-group">
+                        <img src="" width="10" height="10">
+                        <img src="" width="10" height="10">
+                        1999
+                    </span>
+                </p>
+                <p class="MW-item-search-brand">
+                    @Global.brand
+                    <span class="MW-search-price">
+                        $199.99
+                    </span>
+                </p>
+                <button type="button" class="btn MW-search-source"><img src="" width="22" height="22">Pinterest</button>
+                <button type="button" class="btn MW-search-purchase">@Global.purchase</button>
+            </form>
+        </div>
+        <div id="Sitem-waterfall">
+            @*<p class="MW-tagName-head">@Global.category @Global.name<span class="MW-tag-numebr">36</span></p>
+                <select id="MW-item-sortBy">
+                    <option value="Category">@Global.category</option>
+                    <option value="Brand">@Global.brand</option>
+                    <option value="Time">@Global.time</option>
+                </select>
+                <div class="MW-line">
+                </div>
+                <button type="button" id="MW-item-select"><img src="" width="16" height="16"><span>@Global.capSelected</span></button>
+                <button type="button" id="MW-item-add"><img src="" width="16" height="16"><span>@Global.capAdd</span></button>
+                <button type="button" id="MW-item-delete"><img src="" width="16" height="16"><span>@Global.capDelete</span></button>
+            *@
+        </div>
+        <div id="change-info">
+            <button type="button" class="btn btn-primary btn-sm btn3d">@Global.change</button>
+        </div>
+
+        <button type="button" class="btn home-font MW-tag-btn MW-Simg-prev">^</button>
+        <button type="button" class="btn home-font MW-tag-btn  MW-Simg-next">v</button>
+    </div>
+    <div id="MW-Outfit-Item">
+        <div id="MW-outfit-Simg">
+            <img src="" width="80" height="80">
+            <img src="" width="80" height="80">
+            <img src="" width="80" height="80">
+            <img src="" width="80" height="80">
+            <img src="" width="80" height="80">
+            <img src="" width="80" height="80">
+            <img src="" width="80" height="80">
+            <img src="" width="80" height="80">
+            <img src="" width="80" height="80">
+        </div>
+        <div id="MW-outfit-Bimg">
+            <img src="" width="300" height="437">
+            <img src="" width="300" height="437">
+
+        </div>
+        <div class="MW-item-upload-detaile" style="display:block;">
+            <form action="">
+                <input type="text" class="MW-item-tagName" placeholder="Tag" value="tag1 tag2 tag3">
+                <div style="margin-top:2px">
+                    <input type="text" class="MW-item-category" value="category" placeholder="category">
+                    <input type="text" class="MW-item-color" value="color" placeholder="color">
+                </div>
+                <div style="margin-top:2px">
+                    <input type="text" class="MW-item-brand" value="brand" placeholder="brand">
+                    <input type="text" class="MW-item-price" value="price" placeholder="price">
+                </div>
+                <div>
+                    <textarea class="MW-item-source" rows="1">@Global.source</textarea>
+                </div>
+                <textarea class="MW-item-descript" rows="2">@Global.discription</textarea>
+
+            </form>
+        </div>
+
+        <div id="change-info">
+            <button type="button" class="btn btn-primary btn-sm btn3d">@Global.change</button>
+        </div>
+    </div>
+</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

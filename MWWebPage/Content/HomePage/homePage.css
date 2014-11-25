@@ -1,0 +1,340 @@
+﻿@font-face {
+    font-family: 'Century Gothic';
+    src: url("../font-face/CenturyGothic.TTF");
+    src: url("../font-face/CenturyGothic.TTF") format('truetype'); 
+         
+}
+@font-face {
+    font-family: 'Kozuka Gothic Pro';
+    src: url("../font-face/KozGoPro-ExtraLight.otf");
+    src: url("../font-face/KozGoPro-ExtraLight.otf") format('opentype'); 
+         
+}
+body,html{
+    height:100%;
+	width:100%;
+    font-family:'Century Gothic' !important;
+}
+.home-font {
+    font-family:'Century Gothic' !important;
+    letter-spacing:0.05em;
+}
+.home-letterSpace {
+    letter-spacing:0.05em;
+}
+.resize-font {
+    -webkit-text-size-adjust: none;
+}
+#box {
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+}
+.fix-to-top {
+    position:fixed !important;   
+    position:absolute;  
+    top:expression(eval(document.documentElement.scrollTop));
+    z-index:500;
+}
+#menu-background{  
+}
+.top-bg-z-index {
+
+    position: absolute;
+    z-index:11;
+}
+.vertical-align-div {
+	display:inline;
+}
+#menu {
+    top: 65px;
+    width: 52%;
+    /*left: 50%;*/
+    margin-left: 23%;
+    height: 75px;
+}
+#menu > div {
+    width:520px; 
+    margin:0 auto; 
+}
+#menu>a{
+    font-size: 11px;
+    color:black;
+}
+   
+#menu > a:hover {
+    text-decoration:none;
+}
+
+.active-link{
+   /*color:pink !important;*/
+   color:rgb(79, 187, 249) !important;
+}
+
+#text-logo {
+    color:#000000;
+    position:absolute;
+    top:20px;
+    margin-left:2.65%;
+    font-size:20px;
+    letter-spacing:0.2em;
+}
+/*gender select css but not used*/
+/*#sex-condition {
+    position:absolute;
+    top:23px;
+    margin-left:29.6%;
+}*/
+.search-group {
+
+    width:35%;	
+    position:absolute;
+
+    top:21px;
+    margin-left:32.3%;
+}
+
+.search-group > input {
+    height: 35px;
+    border-right: none; 
+    border-radius: 0; 
+    border-width: 2px;
+}
+
+.search-btn {
+    border: 2px solid #ccc;
+    background:white;
+    border-left:none;
+    border-radius: 0;
+}
+.circle-button
+{
+
+	height:55px;
+  	width:55px;
+  	border-radius:27px;
+    border:none;
+
+    display:inline-block;
+    /*margin-right:3%;*/
+
+}
+.right-tool {
+    top:38px;
+    width:23.4%;
+    position:absolute;
+    margin-left:82.9%;
+}
+.right-tool-tip{
+    position:absolute;
+    font-size: 12px;
+    text-align: center;
+    color: black;
+    opacity: 0;
+    top:-20px;
+    width:70px;
+    left:-7px;
+}
+.right-top {
+    width: 280px;
+    margin-left: 81.8%;
+    font-size: 15px;
+    color: #222222;
+    top: 22px;
+}
+
+.right-top > a {
+    color:black !important;
+}
+
+right-button {
+    top:10px;
+}
+.button-in-left
+{
+	width:131px;
+    height:40px;
+    border:none;
+}
+
+.button-at-left-top
+{
+	position:absolute;
+  	top:80px;
+    margin-left:20px;
+
+}
+.form-control:focus, .form-control:focus + span .btn{
+    border-color: #66afe9;
+
+}
+#left-top-link {
+    position: absolute;
+    top: 100px;
+    margin-left: 80px;
+}
+#left-top-link a{
+    color:black;
+    font-size:11px;
+    font-weight:bold;
+   
+}
+/*change on 27/05 by albert which is stylepalette and user div, but just border css*/
+#abt-stylepalette {
+	position:absolute;
+    top:66px;
+    margin-left:850px;
+    width:425px; 
+	height:690px; 
+	border:2px solid #F3F3F1;
+	border-left:3px solid #F3F3F1;
+	border-bottom:8px solid #F3F3F1;
+	background:-webkit-gradient(linear, left top, left bottom, from(#F2F2F0),color-stop(0.5, #FEFEFE), to(#FFFFFF));
+    display:none;
+}
+#abt-userInformatio	n {
+
+	position:absolute;
+    top:66px;
+    margin-left:850px;
+    width:425px; 
+	height:690px; 
+	border:2px solid #F3F3F1;
+	border-left:3px solid #F3F3F1;
+	border-bottom:8px solid #F3F3F1;
+	background:-webkit-gradient(linear, left top, left bottom, from(#F2F2F0),color-stop(0.5, #FEFEFE), to(#FFFFFF));
+    display:none;
+}
+
+.text-btn-broardcast  {
+    width: 98px;
+    height:30px;
+    outline:0;
+    padding:0px;
+    border: none;
+    background-color:transparent;
+
+    font-size: 11px;
+}
+
+.discount {
+    margin-left: -3px;
+}
+
+#block-cover {
+    position: absolute;
+    z-index:-1;
+    width: 98px;
+    height: 30px;
+    top: 0px;
+    border-radius:2px;
+    margin-left:97px
+}
+
+.broardcast-btns {
+    z-index: 500; 
+    top: 90px; 
+    margin-left: 2.9%; 
+}
+
+.bottom-tools {
+    position: fixed;
+    top: 100%;
+    left: 50%;
+    /*margin-left: -45px;*/
+    margin-top: -34px;
+    z-index: 500;
+}
+#feed-back {
+    width: 33%;
+    height: 100%;
+    top:179px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(240,240,240,0.9);
+    border-left: 3px solid #F3F3F1;
+    border-right: 3px solid #F3F3F1;
+    border-radius:2px;
+    display:none;
+}
+#feed-back-title {
+    text-align:center;
+}
+#home-menu-mask {
+    height:179px;
+    width:100%;
+    background-color:white;
+    z-index:15;
+}
+#bottom-tools-border {
+    display:none;
+    position: fixed;
+    width: 170px;
+    height: 100px;
+    border-radius: 200px;
+    /* border: 5px solid #dfdfdf; */
+    top: 100%;
+    left: 50%;
+    margin-left: -85px;
+    margin-top: -44px;
+    z-index: 9000;
+}
+#bottom-tools-border button {
+    background-color:transparent;
+    border:0px;
+    padding:0px;
+}
+
+.search-select {
+    position:absolute;
+    top:2px;
+    left:0px;
+    z-index:501;
+}
+
+.clean-btn {
+    background-color: transparent;
+    border-left:none;
+    border-top:none;
+    border-bottom:none;
+    border-right:1px dotted #ccc;
+    height:31px;
+    border-radius:0;
+}
+#Conditions {
+    display: none;
+    position:relative; 
+    width:450px; 
+    margin-left:30px; 
+}
+#MenuClear {
+    outline: 0;
+    position:absolute;
+    right:-60px;
+}
+.condition-select {
+    height:45px;
+    overflow-y:auto;
+}
+.scenario-switch {
+    position:absolute;
+    top:30px;
+    margin-left:30.6%;
+    border:none;
+    padding:0px;
+    background-color:transparent;
+    outline:0;
+}
+#home-goTop {
+    margin-left:-10px;
+}
+#feedBack-btn {
+    margin-left: -50px;
+    margin-top: -25px;
+}
+#invite-btn {
+    margin-left: 32px;
+    margin-top: -27px;
+}

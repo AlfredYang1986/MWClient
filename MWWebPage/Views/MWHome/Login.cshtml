@@ -1,0 +1,330 @@
+﻿@{
+    ViewBag.Title = "Login";
+}
+
+@section css{
+    <link href="~/Content/Login.css" rel="stylesheet" />
+    <link href="~/Content/CreateMyWardrobe.css" rel="stylesheet" />
+    <link href="~/Content/LoginDialog.css" rel="stylesheet" />
+}
+@section scripts{
+    <script type="text/javascript">
+
+        function changebutton() {
+            document.getElementById("arrow_up").style.visibility = "visible";
+            document.getElementById("Lmore").style.visibility = "hidden";
+        }
+
+        function showMoreAndUparrow() {
+            $("#Lmore").css("visibility", "visible");
+            $("#arrow_up").css("visibility", "hidden");
+        }
+
+        function hiddenMoreAndUparrow() {
+            $("#Lmore").css("visibility", "hidden");
+            $("#arrow_up").css("visibility", "visible");
+        }
+
+        function login() {
+            $("#login").click(function (e) {
+
+                //Prevent the default Get request
+                e.preventDefault();
+                //Extract data
+                var $usr = $("#username").val();
+                var $pswd = $("#password").val();
+                var $reme = $("#reme").is(':checked');
+                if ($usr.length == 0 || $pswd.length == 0) {
+                    alert("Error");
+                }
+                else {
+
+                    //Make post request
+                    var $response = $.post($(this).attr("href"), { username: $usr, password: $pswd, rememberMe: $reme })
+                    $response.done(function () {
+                        alert("success" + $response);
+                    })
+                    $response.fail(function () {
+                        alert("error" + $response);
+                    })
+                    $response.always(function () {
+                        alert("finished" + $response);
+                    });
+                }
+            });
+        }
+
+        $(function () {
+            login();
+
+            $('.carousel').carousel({
+                interval: false
+            })
+
+            $("#arrow_up").click(function () {
+                if ($("div.active").children().hasClass("item2")) {
+
+                    $("#Lmore").css("visibility", "visible");
+                    $("#arrow_up").css("visibility", "hidden");
+                }
+            });
+            
+            $("#arrow_down").click(function () {
+                if ($("div.active").children().hasClass("item4")) {
+
+                    $("#Lmore").css("visibility", "visible");
+                    $("#arrow_up").css("visibility", "hidden");
+                }
+            });
+
+            $("#active-login").click(function () {
+                $("#createMyWardrobe").modal("hide");
+                $("#myModal").modal("show");
+            });
+
+            $('#box').bind('mousewheel', function (e) {
+                if (e.originalEvent.wheelDelta / 120 > 0) {
+                    $('.carousel').carousel('prev');
+                    $(function() {
+                        if ($("div.active").children().hasClass("item2")) {
+                            $("#Lmore").css("visibility", "visible");
+                            $("#arrow_up").css("visibility", "hidden");
+                        }
+                        if ($("div.active").children().hasClass("item1")) {
+                            $("#Lmore").css("visibility", "hidden");
+                            $("#arrow_up").css("visibility", "visible");
+                        }
+                    });
+                }
+                else {
+                    $('.carousel').carousel('next');
+
+                    $(function(){
+                        if ($("div.active").children().hasClass("item1")) {
+
+                            $("#Lmore").css("visibility", "hidden");
+                            $("#arrow_up").css("visibility", "visible");
+                        }
+                        if ($("div.active").children().hasClass("item4")) {
+
+                            $("#Lmore").css("visibility", "visible");
+                            $("#arrow_up").css("visibility", "hidden");
+                        }
+                    });
+                }
+            });
+
+            for (var index = 1; index <= 4; ++index) {
+                $("#pointer" + index).hover(function () {
+                    $("#" + $(this).attr("id") + "-text").css("visibility", "visible");
+                }, function () {
+                    $("#" + $(this).attr("id") + "-text").css("visibility", "hidden");
+                });
+            }
+
+
+            for (var index = 1; index <= 4; ++index) {
+                $("#pointer" + index).click(function () {
+                    var s = $(this).attr("id");
+                    if (s.substr(s.length - 1, 1) == "1") showMoreAndUparrow();
+                    else hiddenMoreAndUparrow();
+                });
+            }
+
+            //this part is createMyWardrobe jquery and javascript by Ian
+            for (var i = 1940; i < 2014; i++) {
+                var a = $("#BirthdayYear")[0];
+                a.options.add(new Option(i, i));
+            }
+            for (var i = 1; i <= 12; i++) {
+                var a = $("#BirthdayMonth")[0];
+                a.options.add(new Option(i, i));
+            }
+            for (var i = 1; i <= 31; i++) {
+                var a = $("#BirthdayDay")[0];
+                a.options.add(new Option(i, i));
+            }
+
+            $("#BirthdayMonth").change(function () {
+                changeDayList();
+            });
+            $("#BirthdayYear").change(function () {
+                changeFebDayList();
+            });
+        });
+
+        function changeDayList() {
+
+            var day = $("#BirthdayDay")[0].value;
+            if ($("#BirthdayMonth")[0].value == "4" || $("#BirthdayMonth")[0].value == "6" || $("#BirthdayMonth")[0].value == "9" || $("#BirthdayMonth")[0].value == "11") {
+
+                $("#BirthdayDay").empty();
+                $("#BirthdayDay")[0].options.add(new Option("Day", "Day"));
+                AddDay(30);
+                if (day != "31")
+                    $("#BirthdayDay")[0].value = day;
+            }
+            if ($("#BirthdayMonth")[0].value == "Mon")
+            {
+                $("#BirthdayDay").empty();
+                $("#BirthdayDay")[0].options.add(new Option("Day", "Day"));
+                AddDay(31);
+                    $("#BirthdayDay")[0].value = day;
+            }
+
+            if ($("#BirthdayMonth")[0].value == "1" || $("#BirthdayMonth")[0].value == "3" || $("#BirthdayMonth")[0].value == "5" || $("#BirthdayMonth")[0].value == "7" || $("#BirthdayMonth")[0].value == "8" || $("#BirthdayMonth")[0].value == "10" || $("#BirthdayMonth")[0].value == "12") {
+                $("#BirthdayDay").empty();
+                $("#BirthdayDay")[0].options.add(new Option("Day", "Day"));
+                AddDay(31);
+                $("#BirthdayDay")[0].value = day;
+            }
+
+            if ($("#BirthdayMonth")[0].value == "2") {
+                $("#BirthdayDay").empty();
+                $("#BirthdayDay")[0].options.add(new Option("Day", "Day"));
+                AddDay(29);
+                if (day != "30" && day !== "31")
+                    $("#BirthdayDay")[0].value = day;
+            }
+        }
+
+        function AddDay(i) {
+            for (var day = 1; day <= i; day++) {
+                $("#BirthdayDay")[0].options.add(new Option(day, day));
+            }
+        }
+
+        function judgeLeapYear() {
+            var y = $("#BirthdayYear")[0].value;
+            return y % 100 == 0 ? y % 400 == 0 : y % 4 == 0;
+        }
+
+        function changeFebDayList() {
+            var day = $("#BirthdayDay")[0].value;
+            if ($("#BirthdayMonth")[0].value == "2") {
+                if (!judgeLeapYear()) {
+                    $("#BirthdayDay").empty();
+                    $("#BirthdayDay")[0].options.add(new Option("Day", "Day"));
+                    AddDay(28);
+                    if (day != "29")
+                        $("#BirthdayDay")[0].value = day;
+                }
+                else {
+                    $("#BirthdayDay").empty();
+                    $("#BirthdayDay")[0].options.add(new Option("Day", "Day"));
+                    AddDay(29);
+                    $("#BirthdayDay")[0].value = day;
+                }
+            }
+        }
+    </script>
+
+}
+
+@model MWWebPage.Models.LoginContext
+<div id="box">
+    <div id="myCarousel" class="vertical-slider carousel vertical slide" style="height:100%">
+        <div id="pointer-text">
+            <ul>
+                <li id="pointer1-text" class="pointer-text-visibility">index</li>
+                <li id="pointer2-text" class="pointer-text-visibility" style="line-height:30px" >instruction1</li>
+                <li id="pointer3-text" class="pointer-text-visibility" style="line-height:10px">instruction2</li>
+                <li id="pointer4-text" class="pointer-text-visibility" style="line-height:35px">instruction3</li>
+            </ul>
+        </div>
+        
+        <div class="pointer">
+            <ol class="carousel-indicators ">
+                <li id="pointer1" data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li id="pointer2" data-target="#myCarousel" data-slide-to="1"></li>
+                <li id="pointer3" data-target="#myCarousel" data-slide-to="2"></li>
+                <li id="pointer4" data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" style="visibility: hidden;" data-slide-to="4"></li>
+            </ol>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="indexPage item1">
+                    <div id="text_link">
+                        <a style="margin-right:15px" href="#">English</a> <a href="#">中文</a>
+                    </div>
+                    <!--searching bar start-->
+                    @using (Html.BeginForm("Index", "MWHome", FormMethod.Get))
+                    {
+                        @Html.ValidationSummary(true);
+                        <div id="search">
+
+                            <p id="text_logo"> MEGAWARDROBE</p>
+
+                            <form>
+                                <div class="input-group search_group">
+                                    <input type="text" class="form-control search_bar_height border search_bgcolor" name="strInput">
+                                    <span class="input-group-btn ">
+                                        <button class="btn search_bgcolor border search_bar_height " type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                          , Model.loginTypes.Megawardrobe)          </span>
+                                </div>
+                                <button class="btn search-btn" type="submit" id="search-btn">EXPLORE</button>
+                            </form>
+                        </div>
+                    }
+                    <!--searching bar start end-->
+                    <div class="Long-text"> <p>Find your fashion around you,look for your chic belong you.</p></div>
+
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="indexPage item2">
+
+                </div>
+            </div>
+            
+            <div class="item">
+                <div class="indexPage item3">
+                    <h1 class="center-text">Instrction 2</h1>
+                </div>
+            </div>
+            
+            <div class="item">
+                <div class="indexPage item4">
+                    <h1 class="center-text">Instrction 3</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div id="footer">
+    <div id="" class="pull-left" style="line-height:73px;display:inline-block;">
+        <button class="btn" data-target="#createMyWardrobe" data-toggle="modal" style="margin-left:22px;font-size:15px;font-family:Century Gothic">Create my wardrobe</button>
+        <button class="btn" data-target="#myModal" data-toggle="modal" style="margin-left:20px;font-size:15px;font-family:Century Gothic">Login</button>
+        <button class="btn btn_facebook" style="margin-left:21px;width:178px;height:29px"><img style="padding-bottom:5px" src="../Images/facebook.png" alt="facebook" height="18" width="14" />Sign in with Facebook</button>
+    </div>
+    <div style="display:inline-block;text-align:center;margin-top:6px;">
+        <a id="arrow_up" class="learn-more"  href="#myCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-up"></i></a>
+        <br>
+        <span class="learn-more" id="Lmore" >Learn more </span>
+        <br>
+        <a onclick="changebutton()" id="arrow_down" class="learn-more"href="#myCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-down"></i></a>
+    </div>
+
+    <div class="pull-right" style="line-height:73px; display:inline-block;">
+        <a href="#" class="font-size" style="margin-right:40px;letter-spacing: 0.05em;">Business & Designer</a>
+        <a href="#" class="font-size" style="margin-right:35px;letter-spacing: 0.05em;">Policy</a>
+        <a href="#" class="font-size" style="margin-right:36px;letter-spacing: 0.05em;">Privacy&amp;Terms</a>
+    </div>
+
+</div>
+
+
+<!-- Modal -->
+
+<div class="modal fade" id="createMyWardrobe" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    @Html.Partial("CreateMyWardrobe")
+</div>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    @Html.Partial("_LoginInDialog_Auth", Model.loginTypes.Megawardrobe)
+</div>

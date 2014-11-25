@@ -1,0 +1,34 @@
+﻿@using MvcGlobalisationSupport;
+@using MWWebPage.Resources;
+<div id="Mw-Pane" class="fix-to-top" >
+    <div id="Mw-Pane-Top-Button" class="center-block">
+        <button type="button" class="btn home-font resize-font" >
+            <img class="Mw-upload-icon" src="~/Images/home/upload.svg" width="13" height="16" />
+            <span class="" > @Global.capUpload</span>
+        </button>
+        <button type="button" class="btn Mw-Pane-Default-Btn editTags home-font resize-font" style="margin-left:15px" >
+            <img class="Mw-edit-icon" src="~/Images/home/edit.svg" width="13" height="16" />
+            <span class="" > @Global.edit</span>
+        </button>
+        <button type="button" class="btn editBtnGroup cancle-btn home-font resize-font" style="margin-left:15px">
+            <img class="Mw-done-icon" src="~/Images/home/done.svg" width="13" height="16" />
+            <span class="" > @Global.capDone</span>
+        </button>
+    </div>
+    <div id="myCarousel" class="carousel slide" style="height: 86%">
+        <!-- Indicators -->
+        <ol class="carousel-indicators"></ol>
+
+        <div class="carousel-inner" style="height:100%">
+        </div>
+
+        <a id="tag-prev" href="#myCarousel" data-slide="prev" style="color: #dedede; position: absolute; bottom: 30px; left: 50%; margin-left:-50px;">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a id="tag-next" href="#myCarousel" data-slide="next" style="color: #dedede; position: absolute; bottom: 30px; right: 50%; margin-right:-50px;">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+
+    </div>
+
+</div>

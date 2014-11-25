@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>@ViewBag.Title</title>
+        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        @Styles.Render("~/Content/css")
+        <link href="~/Content/themes/Bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+        <link href="~/Content/themes/Bootstrap/css/bootstrap-theme.css" rel="stylesheet" type="text/css"/>
+        @*<link href="~/Content/themes/Bootstrap/font-awesome/font-awesome.css" rel="stylesheet" type="text/css"/>*@
+	
+        @Scripts.Render("~/bundles/modernizr")
+        @Styles.Render("~/Content/themes/base/css")
+
+        @RenderSection("css", required: false)
+    </head>
+    <body>
+        @RenderBody()
+
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/jqueryui")
+        @Scripts.Render("~/Bootstrap")
+        @RenderSection("scripts", required: false)
+    </body>
+</html>

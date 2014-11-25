@@ -1,0 +1,23 @@
+﻿@model IEnumerable<MWWebPage.Models.ItemInfo>
+@using MvcGlobalisationSupport;
+@using MWWebPage.Resources;
+
+<div id='W-All-items-tag'>
+    <label id="WS-itemTags" data-tagid="All">@Global.capAll</label><span>@Model.Count()</span>
+</div>
+<div id="W-All-ListItems">
+    <div id='W-All-items-button' class='btn-group'>
+        <button id="W-deleteItemBtn"><i class="glyphicon glyphicon-list-alt"></i>@Global.capDelete</button>
+        <button id="W-MoveToBtn"><i class="glyphicon glyphicon-align-justify"></i>@Global.capMoveTo</button>
+        <button><i class="glyphicon glyphicon-align-justify"></i>SAVE</button>
+    </div>
+    <div id="W-All-AllItems">
+        @foreach (var item in Model)
+        {
+            <div class="W-All-eachItem" data-likecount=@item.LikeCount data-itemid=@item.searchable_ItemId data-tagid=@item.tagId data-title="@item.title" data-brand="@item.brand" data-price=@item.price>
+                <img src="@item.default_pic" alt="" />
+            </div>
+        }
+    </div>
+</div>
+

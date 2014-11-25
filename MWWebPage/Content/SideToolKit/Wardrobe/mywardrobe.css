@@ -1,0 +1,643 @@
+#Mw-Pane{
+    position:absolute;
+    top:66px;
+    right:3px;
+    width:33.3%;
+    height:91.5%;
+    border-left:6px solid #F3F3F1;
+	border-bottom:15px solid #F3F3F1;
+    /*background: -webkit-linear-gradient( #f2f2f0 , #ffffff); 
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#F2F2F0, endColorstr=#FFFFFF);*/
+    -webkit-user-select:none;
+    font-family:'Century Gothic'!important;
+    display:none;
+    z-index:16;
+    background-color:#fcfcfc;
+}
+.mywardrobe{
+    height:100%;
+}
+.Mw-Pane-Default-Btn {
+    cursor:pointer;
+}
+.btn-z-index {
+    position:relative;
+    z-index:12;
+}
+#Mw-Pane-Top-Button {
+    width:150px;
+    margin-top:14%;
+}
+#Mw-Pane-Top-Button  > button{
+    font-size:12px;
+    color:#000000;
+	background-color: transparent;
+    padding:0;
+    border:none;
+}
+#Mw-Pane-Top-Button img {
+    vertical-align:sub;
+}
+.editTags {
+}
+.cancle-btn {
+}
+.Mw-edit-icon {
+}
+.Mw-upload-icon {
+}
+/*overwrite bootstrap for carousel-indicators*/
+.carousel-indicators li {
+    background-color: #dedede;
+}
+.carousel-indicators {
+
+}
+.carousel-indicators .active {
+    background-color: #4FBBF9;
+}
+
+/*overwrite bootstrap*/
+#Mw-Pane .btn:active,
+.btn.active {
+    background-image: none;
+    outline: 0;
+    -webkit-box-shadow: inset 0 0 0 0  white !important; 
+    box-shadow: inset 0 0 0 0  white !important; 
+}
+
+.circle {    
+    position:relative;
+    height:102px;
+    width:102px;
+    padding: 0px;
+    border-radius: 102px;
+    -moz-border-radius: 102px;
+    -webkit-border-radius: 102px;
+    display: inline-block;
+    background:-webkit-gradient(linear, left top, left bottom, from(#F2F2F0), to(#dedede));
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#F2F2F0, endColorstr=#FFFFFF);
+    
+}
+.circle-test {    
+    height:102px;
+    width:102px;
+    padding: 0px;
+    border-radius: 102px;
+    -moz-border-radius: 102px;
+    -webkit-border-radius: 102px;
+    background:-webkit-gradient(linear, left top, left bottom, from(#F2F2F0), to(#dedede));
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#F2F2F0, endColorstr=#FFFFFF); 
+}
+.circle-shadow {
+    height:102px;
+    width:102px;
+    padding: 0px;
+    border-radius: 102px;
+    -moz-border-radius: 102px;
+    -webkit-border-radius: 102px;
+    display: inline-block;
+    background-color: rgba(0,0,0,0.16);
+
+    
+}
+.circle-background {
+    
+}
+.circle-selected {
+    background:none;
+    background-color:white;
+    border:1px solid #8ACFF8;
+}
+.no-tags {
+    background:none;
+    background-color:#F8F8F8;
+    border:1px solid #F1F1EF;
+}
+.tags-gap{
+    /*margin-left:26px;*/
+}
+/*#Mw-Pane textarea{
+	position:absolute;
+	resize:none; 
+	top:40px; 
+	left:15px; 
+	background:none; 
+	text-align:center; 
+	color:#6E6E6E; 
+	border:none;
+    outline:0;
+	  
+}*/
+#Mw-Pane input {
+    font-family:'Century Gothic';
+    font-size:12px;
+    position:absolute;
+	top:110px; 
+	left:3px; 
+	background:none; 
+	color:#000000;
+    border:none;
+	/*background-color: rgba(255,255,255,0.75);*/
+    text-align:center;
+    
+}
+#Mw-Pane textarea {
+    position:absolute;
+	top:110px; 
+	left:15px; 
+    font-family:'Century Gothic';
+    font-size:12px;
+    resize:none; 
+	background-color:transparent;
+	color:#000000;
+    border:none;
+    text-align:center; 
+}
+.div-relative{
+    position:relative;
+    float:right;
+    display:block;
+
+}
+.create-tag {
+    position:relative;
+    height:102px;
+    width:102px;
+    background:-webkit-gradient(linear, left top, left bottom, from(#87a2b1), to(#dddedc));
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#87a2b1, endColorstr=#dddedc);
+    border-radius: 102px;
+    -moz-border-radius: 102px;
+    -webkit-border-radius: 102px;
+    /*margin-left: 28px;*/
+    float:right;
+    display:block;
+    padding: 0px;
+    display: inline-block;
+    cursor: pointer;
+}
+.create-tag > p{
+    letter-spacing:0.1em;
+    position: absolute;
+    text-align: center;
+    font-size: 12px;
+    color: #ffffff;
+    width: 50px;
+    top: 34px;
+    left: 28.5px;
+}
+.allTag {
+    position:relative;
+    height:102px;
+    width:102px;
+    /*margin-top:28px;*/
+    padding: 0px;
+    border-radius: 102px;
+    -moz-border-radius: 102px;
+    -webkit-border-radius: 102px;
+    display: inline-block;
+    background:-webkit-gradient(linear, left top, left bottom, from(#87a2b1), to(#dddedc));
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#87a2b1, endColorstr=#dddedc);
+    cursor: pointer;
+}
+.allTag > P {
+    letter-spacing:0.1em;
+    position: absolute;
+    text-align:center; 
+    font-size:12px;
+    color:#ffffff;
+    top: 35px;
+}
+
+.delete-btn {
+    z-index:500; 
+    position:absolute; 
+    height:27px; 
+    width:19px; 
+    background-color:rgba(255,255,255,0.86); 
+    margin-left:41.5px; 
+    top:0px;
+    cursor:pointer;
+    display:none;
+}
+.delete-btn >p  {
+    position: absolute;
+    bottom: 0px;
+    left: 6px;
+    margin:0px;
+    font-size: 12px;
+}
+.editBtnGroup {
+    display:none;
+}
+.textarea-border {
+    border:1px dashed #B9C7D0;
+}
+.textarea-selected {
+    border:1px solid #8ACFF8;
+}
+/*wardrobe details css include single  item and outfit item*/
+
+/* CSS used here will be applied after bootstrap.css */
+#MW-tag-detail{
+	background-color:rgba(206,206,206,0.64);
+}
+#MW-detailes{
+  	background-color:white;
+	height:756px;
+  	width:1148px;
+}
+.MW-tags{
+    position:absolute;
+    left:220px;
+    top:26px;
+    /*height:85px;
+    width:364px;
+	border:1px solid #dfdfdf;*/
+}
+.SingleItem-btn{
+    position:absolute;
+    width:108px;
+    height:28px;
+    left:656px;
+    top:66px;
+    padding:0px;
+ 	font-size:12px;
+    color:#a2a2a2;
+    background-color:#564f47;
+  	border-radius:2px;
+
+}
+.Outfit-btn{
+    position:absolute;
+    width:108px;
+    height:28px;
+    left:783px;
+    top:66px;
+    padding:0px;
+    font-size:12px;
+    color:#a2a2a2;
+    background-color:#f3f3f0;  
+  	border-radius:2px;
+
+}
+#MW-close-btn{
+	position:absolute;
+  	right:20px;
+  	top:15px;
+}
+#Single-Item-BImg{
+	position:absolute;
+    width:258px;
+  	height:362px;
+  	left:164px;
+    top:178px;
+  	border:1px solid #dfdfdf;
+}
+#Single-Item-SImg{
+	position:absolute;
+  	left:73px;
+  	top:170px;
+}
+.MW-carouse-item {
+    overflow:hidden;
+}
+.MW-carouse-item .slides {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.MW-carouse-item .slide {
+    float:left;
+    width: 80px;
+    height: 80px;
+    margin-top: 8px;
+}
+.MW-carouse-item img {
+    display:block;
+    border:1px solid #dfdfdf;
+}
+.MW-item-upload-detaile{
+	position:absolute;
+  	left:169px;
+  	top:554px;
+    display:none;
+}
+.MW-item-upload-detaile input{
+	font-size:12px;
+  	color:#555555;
+  	height:24px;
+  	border:none;
+  	outline-color:#747474;
+  	padding-left:2px;
+
+  	
+}
+.MW-item-upload-detaile textarea{
+	font-size:12px;
+  	color:#555555;
+  	border:none;
+  	resize:none;
+    outline-color:#747474;
+   
+}
+.MW-item-source{
+    width: 247px;
+    height: 27px;
+  	margin-top:8px;
+  	padding:6px 2px;
+  	background-color:#f7f7f7;
+  
+}
+.MW-item-descript{
+    width: 247px;
+    height: 44px;
+  	background-color:#f7f7f7;
+  	
+}
+.MW-item-category{
+	width:171px;
+}
+.MW-item-brand{
+	width:171px;
+}
+.MW-item-tagName{
+	width:171px;
+}
+.MW-item-color{
+  	float:right;
+	width:50px;
+}
+.MW-item-price{
+  	float:right;
+	width:30px;
+}
+.MW-tagName-head{
+	position:absolute;
+  	left:489px;
+  	top:153px;
+  	color:#555555;
+  	font-size:15px;
+  
+}
+.MW-tag-numebr{
+  	margin-left:15px;
+    color:#555555;
+  	font-size:12px;
+}
+#MW-item-sortBy {
+   	position:absolute;
+    top:153px;
+    right:64px;
+    border:none;
+    color:#555555;
+    font-size:12px;
+}
+.MW-line {
+    position:absolute;
+    left:490px;
+    top:175px;
+	width:590px;
+    height:1px;
+    background-color:#000000;
+}
+#MW-item-select{
+	position:absolute;
+    right:86px;
+    top:190px;
+    border:none;
+    background-color:transparent;
+    font-size:12px;
+    color:#555555;
+    
+}
+#MW-item-select span{
+	display:inline-block;
+    margin-left:10px;
+}
+#MW-item-delete {
+  	position:absolute;
+    left:490px;
+    top:190px;
+    border:none;
+    background-color:transparent;
+    font-size:12px;
+    color:#555555;
+}
+#MW-item-delete span{
+	display:inline-block;
+    margin-left:10px;
+}
+#MW-item-add{
+  	position:absolute;
+    left:600px;
+    top:190px;
+    border:none;
+    background-color:transparent;
+    font-size:12px;
+    color:#555555;
+}
+#MW-item-add span{
+	display:inline-block;
+    margin-left:10px;
+
+}
+#change-info{
+	position:absolute;
+    left: 358px;
+	top: 119px;
+}
+#edit {
+  	position:absolute;
+  	left: 358px;
+	top: 526px;
+}
+.MW-item-search-detaile{
+	position:absolute;
+  	left:169px;
+  	top:554px;
+}
+.MW-item-search-detaile p{
+  	margin-bottom:0px;
+  	width:247px;
+  	height:20px;
+  	font-size:12px;
+ 	color:#555555;
+}
+.MW-item-search-cat {
+    font-size:12px;
+		
+}
+#MW-item-likeNo{
+
+}
+.MW-item-search-brand{
+    font-size:12px;
+}
+.MW-like-group {
+    font-size:12px;
+	float:right;
+  	display:inline-block;
+}
+.MW-search-price{
+	float:right;
+  	display:inline-block;
+  	font-size:15px;
+  	color:#555555;
+}
+.MW-search-source{
+	width:100%;
+  	height:27px;
+  	font-size:12px;
+  	margin-top:6px;
+  	padding:0px;
+  	color:#555555;
+  	background-color:#f7f7f7;
+}
+.MW-search-purchase{
+	width:100%;
+  	height:27px;
+  	margin-top:6px;
+  	padding:0px;
+ 	font-size:12px;
+    color:#000000;
+    background-color:#ff7474;
+  	border-radius:2px;
+}
+.MW-search-source img{
+  	margin-right:10px;
+
+}
+
+#MW-outfit-Simg{
+	position:absolute;
+ 	width:270px;
+  	left:163px;
+  	top:216px;
+}
+#MW-outfit-Simg img{
+	margin-top:10px;
+  	margin-left:5px;
+}
+.MW-outfit-img-active{
+	border:1px solid #aaaaaa;
+}
+#MW-Outfit-Item{
+	display:none;
+}
+
+#MW-outfit-Bimg{
+	position:absolute;
+  	width:640px;
+  	height:455px;
+  	left:466px;
+  	top:214px;
+  	border:1px solid pink;
+   	overflow:auto;
+  	
+}
+#MW-outfit-Bimg img{
+	margin-left:5px;
+  	margin-top:10px;
+}
+
+.MW-Tag-prev {
+    position:absolute;
+    left:193px;
+    top:50px;   
+}
+.MW-Tag-next{
+    position:absolute;
+    left:596px;
+    top:50px;   
+}
+.MW-tag-btn {
+    font-size:34px;
+    padding:0;
+    background-color:transparent; 
+    transform:scaleX(0.46);
+    -ms-transform:scaleX(0.46); /* IE 9 */
+    -webkit-transform:scaleX(0.46); /* Opera, Chrome, and Safari */
+    color:#b0b0b0 ;
+    outline:none;
+    border:none;
+}
+.MW-tag-btn:hover {
+    color:#333;
+    text-decoration:none;
+}
+.MW-Simg-next {
+    position:absolute;
+    left: 102px;
+    top: 420px;
+    transform:scaleY();
+    -ms-transform:scaleY(0.46); /* IE 9 */
+    -webkit-transform:scaleY(0.46); /* Opera, Chrome, and Safari */
+
+}
+.MW-Simg-prev {
+    position:absolute;
+    left: 102px;
+    top: 145px;
+    transform:scaleY();
+    -ms-transform:scaleY(0.46); /* IE 9 */
+    -webkit-transform:scaleY(0.46); /* Opera, Chrome, and Safari */
+
+}
+
+.MW-carouse-tag {
+    width:800px;
+    overflow: hidden;
+}
+.MW-carouse-tag .slides {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.MW-carouse-tag .slide {
+    float: left;
+    width: 85px;
+    height: 85px;
+    margin: 4px;
+}
+.MW-carouse-tag p {
+    position:absolute;
+    width:86px; 
+    height:86px;
+    border-radius:86px;
+    top:4px;
+    line-height:84px;
+    margin:0px;
+    font-size:12px; 
+    color:#a6a6a6;
+    text-align:center; 
+    background: -webkit-linear-gradient( #ffffff , #f7f7f7); 
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffffff, endColorstr=#f7f7f7);
+}
+
+.MW-carouse-tag .active {
+    color:#ffffff;
+    background:none;
+    background-color:rgba(0,0,0,0.74);
+}
+.Mw-ca
+.btn3d {
+    transition:all .08s linear;
+    position:relative;
+    outline:medium none;
+    -moz-outline-style:none;
+    border:0px;
+    margin-right:10px;
+    margin-top:15px;
+}
+.btn3d:focus {
+    outline:medium none;
+    -moz-outline-style:none;
+}
+.btn3d:active {
+    top:4px;
+}
+.btn-primary {
+    box-shadow:0 0 0 1px #428bca inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 8px 0 0 #357ebd, 0 8px 0 1px rgba(0,0,0,0.4), 0 8px 8px 1px rgba(0,0,0,0.5);
+    background-color:#428bca;
+}

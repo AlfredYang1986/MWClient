@@ -1,0 +1,826 @@
+#W-second-popup{
+    margin-top:50px;
+	width:1148px;
+  	height:746px;
+  	border:1px solid transparent;
+    background-color:#ffffff;
+}
+#close-WardrobePopup {
+    margin-right: 20px;
+    margin-top: 20px;
+    color: #000000;
+    font-size: 20px;
+}
+.W-second-CB{
+	background:none;
+}
+#W-second{
+	/*width:810px;*/
+    width:930px;
+	height:745px;
+	border:1px solid transparent;
+}
+#W-second-top{
+	width:810px;
+	height:130px;
+	border:1px solid transparent;
+}
+#W-second-tags{
+	width:420px;
+  	height:83px;
+	margin-top:28px;
+	margin-left:30px;
+	border-radius:5px;
+}
+.W-second-scroll {
+	width:384px;
+	overflow: hidden;
+	float:left;
+}
+#W-second-LB{
+	margin-top:25px;
+	display:inline-block;
+  	width:17px;
+  	height:30px;
+  	float: left;
+  	padding:0px;
+	background:none;
+	border:none;
+}
+#W-second-RB{
+	margin-top:25px;
+	display: inline-block;
+  	width:17px;
+  	height:30px;
+  	float: right;
+  	padding:0px;
+	background:none;
+	border:none;
+}
+.W-second-Tul{
+	padding-left:0px;
+}
+.W-second-TLi{
+	float: left;
+	list-style-type:none;
+	display:inline-block;
+	text-align:center;
+}
+.W-second-TLi-div {
+    float: left;
+    overflow:hidden;
+    margin-left: 8px;
+	margin-right: 8px;
+    width: 80px;
+	height: 80px;
+    border-radius:50%;
+    background:-webkit-gradient(linear, left top, left bottom, from(#FFFFFF),color-stop(0.5, #FEFEFE), to(#F2F2F0));
+}
+.W-second-TLi-div>img{		
+	width: 80px;
+	height: 96px;
+    visibility:hidden;	
+}
+.W-second-TLi-div>p{
+	position:absolute;
+	padding-top:32px;
+	margin-top:-96px;
+	width:80px;
+	height:80px;
+	border-radius:40px;	
+}
+.W-second-TLi-div > p > span {
+    background-color: rgba(255,255,255,0.75);
+    color:#555555;
+}
+.WS-changeTheBackgroundColor{
+	background-color:rgba(0,0,0,0.5);
+}
+.W-second-SOB{
+	margin-top:-51px;
+	margin-right:66px;
+}
+.W-second-SOB>button{
+	width:108px;
+	height:28px;
+	font-size:12px;
+	color:#747474;
+	margin-left:12px;
+	margin-right:4px;
+	border:none;
+}
+#W-second-left{
+  	width:290px;
+	height:615px;
+	border:1px solid transparent;
+}
+.W-second-left-img{
+	margin-top:25px;
+	margin-left:3px;
+}
+#WS-left-img-div {
+    width:245px;
+    height:350px;
+    overflow:hidden;
+}
+#WS-Left-Title {
+    font-size:12px;
+}
+#WS-left-img{
+	max-width:245px;
+    min-width:245px;
+	/*height:350px;*/
+}
+#W-second-left-img-btn{
+	margin-top:8px;
+	margin-left:218px;
+}
+#W-second-left-img-btn>button{
+    background:none;
+    border:1px solid black;
+}
+#W-second-left-img-info{
+	margin-top:12px;
+	width:245px;
+}
+#W-second-left-img-info>button{
+	width:100%;
+	height:27px;
+	margin-top:3px;
+	margin-bottom:3px;	
+	border:none;
+}
+.WS-ImgInfo {
+    width:245px;
+}
+.WS-items_likes{
+	float:right;
+}
+.WS-unlike-btn{
+    background:url("../../themes/Waterfall/image/broken_heart.png") no-repeat;
+    background-size:18px 18px;
+	height:18px;
+	width:18px;
+	border:0;
+}
+.WS-like-btn{
+    background:url("../../themes/Waterfall/image/heart.png") no-repeat;
+    background-size:18px 18px;
+	height:18px;
+	width:18px;
+	border:0;
+}
+#WS-ImgInfo-btnSrc >img{
+	padding-right:5px;
+}
+#WS-ImgInfo-btnBuy{
+	background-color:#ff5555;
+}
+#W-second-right{
+	width:520px;
+	height:615px;
+	margin-top:-615px;
+	border:1px solid transparent;
+}
+#W-second-items{
+	width:420px;
+	margin-top:18px;
+	margin-left:33px;
+}
+#W-second-items-tag{
+	border-bottom:1px solid black;
+}
+#W-second-items-tag>label{
+	margin-left:3px; 
+	font-size:16px;
+	font-weight:500;
+}
+#W-second-items-tag>span{
+	margin-left:12px;
+	font-size:12px;
+}
+#W-second-items-sortby{
+	float:right;
+	border:none;
+	margin-top:3px;
+	margin-right:10px;
+}
+#W-second-allItems{
+	padding-top:20px;
+	width:410px;
+	height:565px;
+	margin-left:10px;
+	overflow:auto;
+}
+#W-second-allItems::-webkit-scrollbar-thumb{
+    background-color:#B03C3F;
+    border-radius:10px;
+}
+.W-second-showItems{
+	margin-top:6px;
+}
+.W-second-showItems>label{
+	font-weight:normal;
+	margin-right:2px;
+}
+.W-second-showItems>span{
+	margin-left:2px;
+	font-size:12px;
+}
+.W-second-sortItem{
+	width:392px;
+}
+.W-second-sortItem>div{
+	display:inline-block;
+}
+.W-second-eachItem{
+	border:1px solid transparent;
+	width:116px;
+	height:160px;
+    overflow:hidden;
+	margin:4px;
+}
+.W-second-eachItem-img {
+    width:116px;
+	height:160px;
+}
+.W-second-eachItem-img>img{
+	width:116px;
+}
+.W-second-eachOutfit{
+	border:1px solid transparent;
+	width:178px;
+	height:255px;
+	margin:4px;
+}
+.W-second-eachOutfit>img{
+	width:178px;
+	height:255px;
+}
+.WS-deleteItemTag-btn{
+	position:relative;
+	float:right;
+	background-color:#ffffff;
+	border:none;
+	margin-right:1px;
+	margin-top:-158px;
+	visibility:hidden;
+}
+.WS-deleteOutfitTag-btn{
+	position:relative;
+	float:right;
+	background-color:#ffffff;
+	border:none;
+	margin-right:1px;
+	margin-top:-253px;
+	visibility:hidden;
+}
+.WS-SetCover-btn {
+    position:relative;
+	float:right;
+	background-color:#ffffff;
+	border:none;
+	margin-right:23px;
+	margin-top:-158px;
+    visibility:hidden;
+}
+.outfitSingleItem-div {
+    display:inline-block;
+    width:75px;
+    height:110px;
+    overflow:hidden;
+    margin:3px;
+}
+.outfitSingleItem {
+    width:75px;
+}
+/*Wardrobe-third*/
+#W-Third-popup {
+    position: absolute;
+    width: 1148px;
+    height: 746px;
+    border: 1px solid #C4C4C4;
+    background-color: #ffffff;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top:50%;
+    margin-top:-380px;
+    border-radius:10px;
+}
+#close-SingleItem{
+    position:absolute;
+    right:5px;
+    top:5px;
+	background:transparent;
+}
+#W-Third-left{
+	margin-left:56px;
+	width:315px;
+	height:745px;
+	border:1px solid transparent;
+    float:left;
+}
+#W-Third-center{
+	margin-left:378px;
+	width:454px;
+	height:745px;
+	border:1px solid transparent;
+}
+#W-Third-right{
+	margin-top:-690px;
+	margin-left:861px;
+	width:250px;
+	height:684px;
+	border-left:1px dotted black;
+}
+#W-Third-waterfall-images {
+    width:220px;
+    height:320px;
+    border:1px solid #d1d1d1;
+    margin-left: 19px;
+    margin-top: 12px;
+
+}
+#W-Third-waterfall-title {
+    margin-left:23px;
+    font-size:18px;
+    color:#555555;
+    font-family:'Century Gothic';
+}
+#W-Third-waterfall-subtitle {
+    margin-left:23px;
+    font-size:12px;
+    color:#555555;
+     font-family:'Century Gothic';
+}
+#W-Third-Sudoku-images {
+    width:220px;
+    height:220px;
+    margin-left: 19px;
+    margin-top: 6px;
+}
+#W-Third-Sudo-image {
+    width:70px;
+    height:70px;
+    border: 1px solid #d1d1d1;
+    display: inline-block;
+}   
+#W-Third-Sudoku-title {
+    margin-left:23px;
+    font-size:18px;
+    margin-top: 23px;
+    color:#555555;
+    font-family:'Century Gothic';
+}
+#W-Third-Sudoku-subtitle {
+    margin-left:23px;
+    font-size:12px;
+    color:#555555;
+    font-family:'Century Gothic';
+}
+#W-Third-leftTop{
+	margin-top:318px;
+	width:291px;
+	height:43px;
+	border-bottom:1px dotted #111111;
+}
+#W-Third-leftTop-TitleBrand {
+    margin-left: 3px;
+	width:68%;
+    font-size:12px;
+    color:#555555;
+    float:left;
+    overflow:hidden;
+}
+#W-Third-leftTop-title{
+    font-size:12px;
+    color:#555555;
+    overflow:hidden;
+}
+#W-Third-leftTop-BP{
+	/*width:200px;
+	height:30px;
+    margin-left: 3px;*/
+    margin-top: 3px;
+    font-size: 12px;
+    color: #555555;
+    overflow: hidden;
+}
+#W-Third-leftTop-price{
+    float:left;
+    width:30%;
+    font-size:16px;
+    color:#555555;
+    overflow:hidden;
+    text-align:right;
+    line-height:42px;
+}
+#W-Third-leftDown{
+	margin-top:10px;
+	width:310px;
+	height:290px;
+	border:1px solid transparent;
+}
+.W-Third-itemComments{
+	width:310px;
+	height:50px;
+	margin-top:20px;
+}
+.W-Third-userImg{
+	width:60px;
+	height:50px;	
+	float:left;
+}
+.W-Third-userImg>img
+{
+	width:50px;
+	height:50px;
+}
+.W-Third-userComment{
+	margin-left:60px;
+	width:250px;
+	height:50px;
+}
+.W-Third-userComment>label{
+	vertical-align:top;
+	font-size:12px;
+	font-weight:normal;
+}
+.W-Third-userComment>span{
+	vertical-align:top;
+	font-size:12px;
+	color:#A4A4A4;
+	margin-left:5px;
+}
+.W-Third-userComment>p{
+	font-size:12px;
+}
+#W-Third-commentClick{
+	position:relative;
+	margin-top:30px;
+	text-align:center;
+}
+#W-Third-commentBtn{
+    font-size:12px;
+	width:100px;
+	height:30px;	
+	border:none;
+    background-color:#d1d1d1;
+}
+#W-Third-centerInfo{
+	margin-top:30px;
+	width:454px;
+	height:30px;
+	border-bottom:1px solid #000000;
+}
+#W-Third-collectBtn{
+	width:14px;
+	height:16px;
+	background:#ffffff;
+	border:none;
+    margin-left:2px
+}
+#W-collect-number {
+    position:relative;
+    font-size:12px;
+    color:#555555;
+    margin-left:4px;
+    top:1.5px;
+}
+#W-Third-likeBtn{
+	margin-left:15px;
+	/*background:url("../../themes/Waterfall/image/white-heart.png") no-repeat;
+    background-size:100% 100%;*/
+    padding:0px;
+    border:none;
+    background-color:transparent;
+}
+#W-Third-like {
+    position: relative;
+    font-size: 12px;
+    margin-left: 4px;
+    color: #555555;
+    top: 1.5px;
+}
+#W-Third-itemshare {
+    margin-left:20px;
+    border:0px;
+    padding:0px;
+    background-color:transparent;
+}
+#W-Third-shareBtn{
+    position:relative;
+	font-size:12px;
+	color:#555555;
+    margin-left: 4px;
+    top:1.5px;
+}
+#W-Third-srcBtn {
+    margin-left: 4px;
+    width: 60px;
+    font-size: 12px;
+    background: none;
+    border: none;
+    color: #000000;
+    overflow-x:hidden;
+}
+#W-Third-srcBtn>img{
+	width:22px;
+	height:22px;
+	margin-right:8px;
+	margin-bottom:3px;
+    border-radius:2px;
+}
+#W-Third-buyBtn{
+	height:27px;
+	width:116px;
+	font-size:12px;
+	background-color:#ff7474;
+    color:#000000;
+	border:none;
+    text-decoration:none;
+}
+#W-Third-singleItem-size {
+    max-width:437px;
+    min-width:437px;
+    max-height:656px;
+    margin-left: 9px;
+    overflow:hidden;
+
+}
+#W-Third-SingleImg{
+	margin-top:15px;	
+	width:437px;    
+}
+
+/*List All the Items*/
+#W-All-popup{
+    margin-top:50px;
+	width:824px;
+  	height:747px;
+    background-color:#ffffff;
+  	border:1px solid transparent;
+}
+.W-All-CB{
+	background:none;
+}
+#W-All{
+	width:686px;
+	height:747px;
+	border:1px solid transparent;
+}
+#W-All-left{
+  	width:245px;
+	height:747px;
+	border:1px solid transparent;
+}
+.W-All-left-img-div{
+    width:225px;
+	height:336px;
+	margin-top:72px;
+}
+#W-All-left-img{
+	width:225px;
+}
+#W-All-right{
+	width:441px;
+	height:747px;
+	margin-top:-747px;
+}
+.W-All-SOB{
+	margin-top:26px;
+}
+.W-All-SOB>button{
+	width:108px;
+	height:28px;
+	font-size:12px;
+	color:#747474;
+	margin-left:12px;
+	margin-right:4px;
+	border:none;
+}
+#W-All-items{
+	width:400px;
+	height:669px;
+	margin-top:20px;
+	margin-left:13px;
+}
+#W-All-items-tag{
+	border-bottom:1px solid black;
+}
+#W-All-items-tag>label{
+	margin-left:3px; 
+	font-size:16px;
+	font-weight:500;
+}
+#W-All-items-tag>span{
+	float:right;
+	margin-right:12px;
+}
+#W-All-items-button{
+	float:right;
+	margin-top:20px;
+	margin-bottom:10px;
+    margin-right:10px;
+}
+#W-All-items-button>button{
+	font-size:12px;
+	margin-right:9px;
+	background:none;
+	border:none;
+}
+#W-All-ListItems{
+	width:400px;	
+}
+#W-All-AllItems{
+	width:400px;
+    height:515px;
+	overflow:auto;
+}
+#W-All-AllItems>div{
+	display:inline-block;
+}
+.W-All-eachItem{
+	border:1px solid transparent;
+	width:116px;
+	height:160px;
+	margin:4px;
+    overflow:hidden;
+    cursor:pointer;
+}
+.W-All-eachItem>img{
+	width:114px;
+}
+.W-All-eachItem-selected {
+    border:1px solid #00E8E8;
+}
+.W-All-eachOutfit{
+	width:176px;
+	height:257px;
+	margin:4px;
+    cursor:pointer;
+}
+.W-All-eachOutfit>img{
+	width:174px;
+	height:255px;
+}
+/*Add To Wardrobe Pop up*/
+#AddToWardrobe{
+    margin-left:30%;
+    margin-top:380px;
+	width:543px;
+	height:139px;
+	background-color:#ffffff;
+  	border:1px solid #C4C4C4;
+
+}
+#close-AddToWardrobeBtn{
+	background:none;
+}
+#AddToW-tag{
+	width:300px;
+	height:40px;
+	margin-top:30px;
+	margin-left:65px;
+}
+#AddToW-tag>span{
+	font-size:13px;
+}
+#AddToW-tag>select{
+	margin-left:10px;
+	width:188px;
+	height:32px;
+}
+#AddToW-botton{
+	width:300px;
+	margin-left:160px;	
+}
+#AddToW-botton>label{
+	width:170px;
+	font-size:12px;
+	float:left;
+	font-weight:normal;
+}
+#AddToW-botton>button{
+	border:none;
+	width:90px;
+	height:28px;
+	border-radius:6px;
+	margin-top:8px;
+	margin-left:40px;
+}
+/*Move To different Tags*/
+#MoveToTags {
+    margin-left:35%;
+    margin-top:350px;
+	width:500px;
+	height:130px;
+	background-color:#ffffff;
+  	border:1px solid #C4C4C4;
+}
+#MoveTo-tag{
+    float:left;
+    display:inline-block;
+	width:300px;
+	height:40px;
+	margin-top:40px;
+	margin-left:50px;
+}
+#MoveTo-tag>span{
+	font-size:13px;
+}
+#MoveTo-tag>select{
+	margin-left:10px;
+	width:188px;
+	height:32px;
+}
+#close-MoveToTagsBtn {
+    background:none;
+}
+#MoveToTagsBtn {
+    float:right;
+    border:none;
+	width:90px;
+	height:28px;
+	border-radius:6px;
+	margin-top:42px;
+	margin-right:20px;
+}
+#W-Third-small-items{
+    width:437px;
+    height:103px;
+    background-color:#ffffff;
+    margin-top: -103px;
+    position: absolute;
+    margin-left: 9px;
+    opacity: 0.39;
+}
+#W-Third-smallitem-previous {
+    height: 27px;
+    width: 12px;
+    margin-left: 14px;
+    margin-top: 38px;
+    background: none;
+    border: none;
+    outline:none;
+}
+#W-Third-smallitem-next {
+    margin-left: 371px;
+    margin-top: 38px;
+    border: none;
+    width: 12px;
+    height: 27px;
+    background: none;
+    outline:none;
+}
+#W-second-outfit-left {
+  
+    display:inline-block;
+    margin-top: 96px;
+    margin-left: 55px;
+    position: absolute;
+}
+#W-second-small-outfit-items{
+    width:260px;
+}
+#W-second-small-outfit-item {
+    width:80px;
+    height:80px;
+    border: 1px solid #aaaaaa;
+    display:inline-block;
+}
+#W-second-outfilt-right{
+    margin-left:363px;
+    margin-top:23px;
+    width: 620px;
+    display:inline-block;
+    /*border-top:1px solid #555555;*/
+}
+#W-second-outfit-bigtagname{
+    border-bottom:1px solid #000000;
+}
+#outfit-tag-name{
+    font-size:15px;
+    font-family:'Century Gothic';
+    color:#555555;
+}
+#outfit-tag-number {
+    font-size:12px;
+    font-family:'Century Gothic';
+    color:#555555;
+    margin-top:5px;
+    margin-left:15px;
+    
+}
+#outfit-sortby{
+    margin-top:-36px;
+}
+.W-second-outifit-bigimage{
+    margin-top:49px;
+    width: 300px;
+    height:437px;
+    display: inline-block;
+    border:1px solid #aaaaaa;
+}

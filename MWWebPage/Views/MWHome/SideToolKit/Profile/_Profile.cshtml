@@ -1,0 +1,180 @@
+﻿@model MWWebPage.Models._AllUserSettingsModel
+@using MvcGlobalisationSupport;
+@using MWWebPage.Resources;
+
+<div id="Pf-Pane" class="fix-to-top" >
+
+    <div id="Pf-Pane-Top-Button">
+
+        <button id="profile_btn"  type="button" name="profile_option_btn" class="active_color profile-option-btn home-font resize-font">
+            <img src="~/Images/home/profile.svg" width="13" height="16" />
+            @Global.profile
+        </button>
+
+        <button id="setting_btn" type="button" name="profile_option_btn" class="profile-option-btn home-font resize-font" >
+            <img src="~/Images/home/setting.svg" width="13" height="16" />
+            @Global.proSetting
+        </button>
+
+        <button id="help_btn" type="button" name="profile_option_btn" class="profile-option-btn home-font resize-font" data-toggle="modal" data-target="#help_info">
+            <img src="~/Images/home/help.svg" width="13" height="16" />
+            @Global.proHelp
+        </button>
+
+        <button id="logout_btn" type="button" name="profile_option_btn" class="profile-option-btn home-font resize-font">
+            <img src="~/Images/home/logout.svg" width="13" height="16" />
+            @Global.logOut
+        </button>
+    </div>
+
+    <div id="profile_info">
+        @* profile button *@
+        <div id="priflie_info_group">
+
+            <label id="profile_label" class="profile_label home-font resize-font" >@Global.profile </label>
+            <button id="profile_edit_btn" type="button" class="home-font resize-font">
+                <img src="~/Images/home/edit.svg" width="13" height="16" style="vertical-align:top;">
+                @Global.edit
+            </button>
+        </div>
+
+        @* profile details *@
+        <form id="profile_form" role="form">
+
+            <div class="form-group profile_form_changemargin">
+                <label class="control-label profile_info_label home-font resize-font" >@Global.nickName</label>
+                <input id="nick_name" type="text" class="margin_input border_modify disable_info home-font resize-font" value=@Model.Profile.NickName />
+            </div>
+
+            <div class="form-group profile_form_changemargin">
+                <label class="control-label profile_info_label home-font resize-font">@Global.gender</label>
+                <select id="gender_option" class="margin_input border_modify disable_info home-font resize-font">
+                    <option selected="@(@Model.Profile.Gender.ToLower().StartsWith("f") ? "selected" : "")">@Global.genderFemale</option>
+                    <option selected="@(@Model.Profile.Gender.ToLower().StartsWith("m") ? "selected" : "")">@Global.genderMale</option>
+                </select>
+            </div>
+
+            <div class="form-group profile_form_changemargin">
+                <label class="profile_info_label home-font resize-font">@Global.birthday</label>
+                <div id="profile_birth" class="margin_input border_modify disable_info">
+                    <select id="profile_PD" class="disable_info home-font resize-font">
+                        <option value="@Model.Profile.BirthDay">@Model.Profile.BirthDay</option>
+                    </select>
+                    <select id="profile_PM" class="disable_info home-font resize-font">
+                        <option value="@Model.Profile.BirthMonth">@Model.Profile.BirthMonth</option>
+                    </select>
+                    <select id="profile_PY" class="disable_info home-font resize-font">
+                        <option value="@Model.Profile.BirthYear">@Model.Profile.BirthYear</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group profile_form_changemargin">
+                <label class="profile_info_label home-font resize-font">@Global.location</label>
+                <input id="location" type="text" class="margin_input border_modify disable_info home-font resize-font" value=@Model.Profile.location />
+            </div>
+
+            <div class="form-group profile_form_changemargin">
+                <label class="profile_info_label home-font resize-font">@Global.occupation</label>
+                <input id="occupation" type="text" class="margin_input border_modify disable_info home-font resize-font" value=@Model.Profile.occupation />
+            </div>
+
+            <div class="form-group profile_form_changemargin">
+                <label class="profile_info_label home-font resize-font">@Global.nationality</label>
+                <input id="nationality" type="text" class="margin_input border_modify disable_info home-font resize-font" value=@Model.Profile.nationality />
+            </div>
+
+            <div id="upload_pic">
+                <img src="..." alt="" class="priflie_UserImg" /><br />
+                <button id="upload" type="button" class="home-font resize-font">
+                    <span class="glyphicon glyphicon-align-justify"></span>
+                    @Global.changePic
+                </button>
+            </div>
+            <button id="profile_cancel_btn" type="button" class="pf-edit-btn home-font resize-font" style="margin-left: 95px;
+margin-top: 10px;">
+                CANCLE
+            </button>
+            <button id="profile_save_btn" type="button" class="pf-edit-btn home-font resize-font">SAVE</button>
+        </form>
+
+        <div id="profile_social">
+            <label id="social_label" class="profile_SW_label home-font resize-font">@Global.sn</label>
+
+            <div  class="profile_social_div">
+                <label id="facebook_profile" class="pull-left profile_social_label"><img src="~/Images/Login/facebook_icon.jpg" alt="" width="22" height="22" class="profile_social_icon" />Facebook</label>
+                <input id="switch_facebook" class="social-switch" type="checkbox" value="1" checked>
+            </div>
+
+            <div  class="profile_social_div">
+                <label id="pinterest_profile" class="pull-left profile_social_label">
+                    <img src="~/Images/Login/pinterest.jpg" alt="" width="22" height="22" class="profile_social_icon" />Pinterest
+                </label>
+                <input id="switch_pinterest" class="social-switch" type="checkbox" value="1" checked>
+            </div>
+
+            <div  class="profile_social_div">
+                <label id="twitter_profile" class="pull-left profile_social_label"><img src="~/Images/Login/Twitter.png" alt="" width="22" height="22" class="profile_social_icon" />Twitter</label>
+                <input id="switch_twitter" class="social-switch" type="checkbox" value="1" checked>
+            </div>
+
+            <div  class="profile_social_div">
+                <label id="instagram_profile" class="pull-left profile_social_label"><img src="~/Images/Login/instagram-icon.png" alt="" width="22" height="22" class="profile_social_icon" />Instagram</label>
+                <input id="switch_instagram" class="social-switch" type="checkbox" value="1" checked>
+            </div>
+
+        </div>
+    </div>
+    
+    <div id="setting_info">
+        <label id="setting_label" class="setting_info_label home-font regist-font">@Global.proSetting</label>
+        <div id="setting_detail">
+            <label class="setting_detail_label home-font regist-font">@Global.email</label>
+            <input id="settings_email_id" type="text" class="setting_input" value="@Model._settings.email" />
+            <div class="setting_detail_PSW">
+                <label class="setting_detail_label home-font regist-font">@Global.password</label>
+                <input id="show_password" class="change_password_input" type="password" />
+                <button id="change_pswd_btn" type="button" class="home-font regist-font">
+                    @Global.proChange 
+                </button>
+            </div>
+            <div id="change_password">
+                <div class="change_password_div">
+                    <label class="change_password_label home-font regist-font">@Global.input@Global.old@Global.password</label>
+                    <input id="old_password" class="change_password_input home-font regist-font" type="password" />
+                </div>
+                <div class="change_password_div">
+                    <label class="change_password_label home-font regist-font">@Global.input@Global.password</label>
+                    <input id="new_password" class="change_password_input home-font regist-font" type="password" />
+                </div>
+                <div class="change_password_div">
+                    <label class="change_password_label home-font regist-font">@Global.confirm@Global.password</label>
+                    <input id="confirm_password" class="change_password_input home-font regist-font" type="password" />
+                </div>
+                <button id="password_cancel_btn" class="password_btn home-font regist-font" type="button">
+                    @Global.cancel
+                </button>
+                <button id="password_save_btn" class="password_btn home-font regist-font" type="button">
+                    @Global.save
+                </button>
+            </div>
+            <div id="switch_delete_div">
+                <input id="switch_delete" type="checkbox" value="1" checked>
+            </div>
+            <div id="switch_ask_div">
+                <input id="switch_ask" type="checkbox" value="1" checked>
+            </div>     
+        </div>
+        <div id="setting_noti">
+            <label id="notification_label" class="setting_info_label">@Global.notification</label>
+            <div id="switch_pswd_change_div">
+                <input id="switch_pswd_change" type="checkbox" value="1" checked>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+</div>

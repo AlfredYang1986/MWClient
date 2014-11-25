@@ -1,0 +1,117 @@
+﻿.Ian-scrollcon
+{   width:488px;
+	height:20px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.Ian-LeftBotton
+{
+	display: inline-block;
+	height: 20px; 
+	width: 22px; 
+	overflow: hidden; 
+	float: left;
+	opacity:0.7;
+	visibility:hidden;
+	border:none;
+}
+
+.Ian-RightBotton
+{
+	display: inline-block;
+	height: 20px; 
+	width: 22px;
+	overflow: hidden; 
+	float: right;
+	opacity:0.7;
+	visibility:hidden;
+	border:none;
+}
+.Ian-Cont {
+    width:442px;
+    overflow: hidden;
+    float: left;
+    height: 20px;
+}
+
+/*.Ian-ScrCont {
+    width: 1000000px;
+}*/
+
+.Ian-brandList {
+    position: relative;
+    float: left;
+}
+
+.Ian-brandList>ul {
+    padding-left:5px;
+}
+
+.Ian-brandList>ul>li
+{
+	float:left;
+	display:inline-block;
+	text-align:center;
+	line-height:20px;
+	margin:0 auto;
+}
+
+.Ian-li > a{
+	text-decoration: none;
+    margin-left:4.2px;
+    margin-right:4.2px;
+    font-family:'Century Gothic';
+	color:black;
+    font-size:10px;
+}
+
+.Ian-li-changeColor {
+    /*color:#A7E8FC !important;*/
+    color:rgb(79, 187, 249) !important;
+}
+
+.Ian-brandIndex {
+    width:400px;
+    height:20px;
+    padding:0px;
+    margin-top:0px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.Ian-BIndexUl {
+	padding:0px;
+    margin-right:20px;
+	text-align:center;
+}
+
+.Ian-brandIndext>ul>li {
+	float:left;
+	text-align:center;
+	line-height:20px;
+	margin:0 auto;
+}
+
+.Ian-brandIndex>ul>li>a {
+	text-decoration: none;
+	padding:0px;
+    font-family:'Century Gothic';
+	color:#555555;
+    
+}
+
+.changeLiPadding {
+	display:inline-block;
+	text-align:center;
+	padding-left:3px;
+	padding-right:3px;
+    font-size:9px;
+}
+
+.Ian-brandIndexLabel {
+    float:left;
+    font-size:10px;
+    line-height:20px;
+    margin-left:25px;
+    padding-top:2px;
+}

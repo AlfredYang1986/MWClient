@@ -1,0 +1,194 @@
+﻿/* 
+    Author: Alfred Yang 
+    26 Feb 2014
+*/
+
+/* Global Style */
+
+* {
+    -webkit-user-select:none;
+    -ms-user-select:none;
+    -moz-user-select:none;
+}
+
+#wrapper {
+  padding-left: 0;
+}
+
+#page-wrapper {
+    width: 100%;
+    /*padding: 55px 15px;*/
+}
+
+#userimageset {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#term {
+    text-align:right;
+}
+
+#dropdownsize {
+    font-size: x-small;
+    text-align: left;   
+}
+
+.maincenter {
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+    margin-top: 35px;
+    font-size: 5px;
+}
+#info {
+    margin-top:5%;
+    
+}
+
+
+.labelmargin {
+    margin-top: 5%;
+}
+#link_sideBar {
+    margin-top:10%;
+}
+
+
+.nikeinfo-size {
+    font-size: 4px;
+}
+
+.close-button
+{
+    margin-top: 5px;
+    margin-right: 15px;
+}
+
+.imagemargin {
+    margin-left: 20px;
+}
+
+/* Nav Announcements */
+
+.announcement-heading {
+    font-size: 50px;
+    margin: 0;
+}
+
+.announcement-text {
+    margin: 0;
+}
+
+/* Table Headers */
+
+table.tablesorter thead {
+    cursor: pointer;
+}
+
+table.tablesorter thead tr th:hover {
+    background-color: #7f7f7f;
+}
+
+
+/* Edit Below to Customize Widths > 768px */
+@media (min-width:768px)
+{
+
+    /* Wrappers */
+
+    #wrapper {
+        padding-left: 230px;
+        transition: all 0.4s ease 0s;
+    }
+
+    #page-wrapper
+    {
+        /*padding: 5px 5px;*/
+    }
+
+    /* Side Nav */
+
+    .side-nav {
+        margin-left: -230px;
+        left: 0px;
+        width: 230px;
+        position: fixed;
+        top: 5px;
+        height: 100%;
+        border-radius: 0;
+        border: none;
+        background-color: white;
+        transition: all 0.4s ease 0s;
+    }
+    
+    .side-nav > ul.nav > li.dropdown > ul.dropdown-menu {
+        position: relative;
+        min-width: 75px;
+        margin: 0;
+        padding: 0;
+        border: none;
+        border-radius: 0;
+        background-color: transparent;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+    }
+        
+
+    /*advanced search pane*/
+    .mw-advanced-search-pane
+    {
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+        border: 1px solid grey;
+    }
+
+    .mw-button-group-up-margin
+    {
+        margin-top: 5px;
+    }
+
+   
+    #foot {
+        margin-top:170%;
+        text-align:right;
+        margin-right:10%;
+}
+    #terms {
+        margin-top:15%;
+        text-align:right;
+        margin-right:10%;
+    }
+    #foot ul li {
+         list-style-type: none;  
+}
+}
+
+
+#fload-buttons
+{
+    position: fixed; 
+    width:100px; 
+    height: 100px;
+    z-index: 1000;
+}
+
+#mw-nav-search-bar
+{
+    margin-top: 5px;
+}
+
+.mw-button-group-up-margin 
+{
+    margin-top: 5px;
+}
+#right_line{
+ position:absolute;
+  right:1px;}
+#home-title {
+    font-size:32px;
+    position:absolute;
+}

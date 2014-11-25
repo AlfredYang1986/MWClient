@@ -1,0 +1,194 @@
+﻿@model MWWebPage.Models.HomeModelContext
+@using MvcGlobalisationSupport;
+@using MWWebPage.Resources;
+
+@{
+    ViewBag.Title = @Global.logo;
+}
+
+@section css{
+    <link href="~/Content/HomePage/homePage.css" rel="stylesheet" />
+    <link href="~/Content/HomePage/brands-Ian.css" rel="stylesheet" />
+    <link href="~/Content/Budget/Ly-budget-classic.css" rel="stylesheet" />
+    <link href="~/Content/Budget/Ly-budget-style.css" rel="stylesheet" />
+    <link href="~/Content/jquery-ui-1.10.4.custom.css" rel="stylesheet" />
+    <link href="~/Content/Colorpicker/customcolorpicker.css" rel="stylesheet" />
+    <link href="~/Content/SideToolKit/Wardrobe/mywardrobe.css" rel="stylesheet" />
+    <link href="~/Content/SideToolKit/Wardrobe/Ian-wardrobe.css" rel="stylesheet" />
+    <link href="~/Content/searchPane/category.css" rel="stylesheet" />  
+    <link href="~/Content/SideToolKit/Profile/jquery.switchButton.css" rel="stylesheet" />
+    <link href="~/Content/SideToolKit/Profile/profile.css" rel="stylesheet" />    
+    <link href="~/Content/SideToolKit/StylePalette/The-Style-Palette.css" rel="stylesheet" />
+    <link href="~/Content/rotate.css" rel="stylesheet" />
+    <link href="~/Content/SideToolKit/SideToolKit.css" rel="stylesheet" />
+    <link href="~/Content/DragAndCrop/jquery.Jcrop.css" rel="stylesheet" />
+    <link href="~/Content/themes/Waterfall/Waterfall.css" rel="stylesheet" />
+    <link href="~/Content/GotoTopbutton/goToTop.css" rel="stylesheet" />
+    <link href="~/Content/LoginPage/CreateMyWardrobe.css" rel="stylesheet" />
+    <link href="~/Content/LoginPage/LoginDialog.css" rel="stylesheet" />
+}
+
+<div id="box">
+    <div class="fix-to-top" style="width:100%">
+        <canvas id="menu-background"  width=1280 height=160  style="width: 100%; height:160px"></canvas>
+    </div>
+    <div id="home-menu-mask" class="fix-to-top">
+    </div>
+    @Html.Partial("HomeMenu/_HomeMenu", Model)
+    @Html.Partial("HomeMenu/_HomeMenuExtend", Model)
+    @Html.Partial("SideToolKit/Wardrobe/Tags/_WardrobePane")
+    @Html.Partial("SideToolKit/Wardrobe/TagItemDetails/_WSPane")
+    @Html.Partial("SearchResult/_WardrobeThirdPane")
+    @Html.Partial("SideToolKit/StypePallet/_StylePallet")
+    @Html.Partial("SideToolKit/Profile/_Profile", Model.SettingModel)
+    @Html.Partial("SearchResult/_AddToWardrobePop")
+    @Html.Partial("_Loading")
+    @Html.Partial("SideToolKit/Wardrobe/TagItemDetails/_MWItemDetail")
+    @Html.Partial("SideToolKit/StypePallet/_MWProfileHelpInfo")
+    @Html.Partial("SideToolKit/StypePallet/_Recommend")
+
+    <div id="page-wrapper" >
+        <div id="searchResults" class="infinite_scroll" style="position:relative;top:170px;">
+            @Html.Partial("SearchResult/_Waterfall", Model)
+        </div>
+    </div>
+
+    <div id="bottom-tools-border">
+        <img src="~/Images/home/feedback-background.svg">
+        <button id="home-goTop" type="button" class="btn bottom-tools btn-lg">
+            <span class="glyphicon glyphicon-arrow-up"></span>
+        </button>
+        <button id="feedBack-btn" type="button" class="btn bottom-tools btn-lg">
+            <span class="glyphicon glyphicon-tags"></span>
+        </button>
+        <button id="invite-btn" type="button" class="btn bottom-tools btn-lg">
+            <span class="glyphicon glyphicon-user"></span>
+        </button>
+    </div>
+    <div id="feed-back" class="fix-to-top">
+        <P id="feed-back-title" style="">FEEDBACK</P>
+    </div>
+</div>
+
+@section scripts{
+    <script src="~/Scripts/Fabric/fabric.js"></script>
+    <script src="~/Scripts/Jcrop/jquery.Jcrop.js"></script>
+    <script src="~/Scripts/Transit/jquery.transit.js"></script>
+    <script src="~/Scripts/rotate3Di/rotate3Di.js"></script>
+    <script src="~/Scripts/NaturalWidth/jquery.naturalWidth.js"></script>
+    <script src="~/Scripts/SideToolKit/StylePalette/jquery.easing.1.3.js"></script>
+    <script src="~/Scripts/SideToolKit/StylePalette/jquery.vaccordion.js"></script>
+    <script src="~/Scripts/SideToolKit/StylePalette/MWStylePallet.js"></script>
+    <script src="~/Scripts/Waterfall/MWWaterfall.js"></script>  
+    <script src="~/Scripts/BudgetJs/jQEditRangeSlider-min.js"></script>
+    <script src="~/Scripts/ColorPickerJs/customColorPicker.js"></script>
+    <script src="~/Scripts/HomeBackgroundDrawing/HomeBackgroundDrawing.js"></script>  
+    <script src="~/Scripts/SideToolKit/Wardrobe/jcarousellite.js"></script>
+    <script src="~/Scripts/SideToolKit/Wardrobe/MWWardrobe.js"></script>
+    <script src="~/Scripts/SideToolKit/Wardrobe/MWWardrobeExtend.js"></script>
+    <script src="~/Scripts/SideToolKit/Profile/jquery.switchButton.js"></script>
+    <script src="~/Scripts/SideToolKit/Profile/profile.js"></script>
+    <script src="~/Scripts/Loading/Loading.js"></script>
+    <script src="~/Scripts/GotoTop/gotoTop.js"></script>
+    <script src="~/Scripts/HomeMenu/HomeMenuSelected.js"></script>
+    <script src="~/Scripts/HomeMenu/HomeMenuEntry.js"></script>
+    <script src="~/Scripts/Waterfall/SearchLogic.js"></script>
+    <script src="~/Scripts/SideToolKit/SideToolKitEntry.js"></script>
+    <script src="~/Scripts/Application/Application.js"></script>
+    <script src="~/Scripts/Application/FuncitonsForBinding.js"></script>
+    <script src="~/Scripts/SideToolKit/StylePalette/StylePalletElement.js"></script>
+    <script src="~/Scripts/HomeMenu/HomeBottomTolls.js"></script>
+    <script src="~/Scripts/Login/Login.js"></script>
+    <script src="~/Scripts/SideToolKit/StylePalette/StylePaletteElemManager.js"></script>
+    <script src="~/Scripts/HomeMenu/HomeMenuEvent.js"></script>
+    <script src="~/Scripts/HomeMenu/HomeIndex.js"></script>
+    <script type="text/javascript">
+
+        var myArray1 = [@Html.Raw(String.Join(",", Model.CategoryMolde.Category.Select(x => "'" + x + "'")))];
+        var listBrandName = [@Html.Raw(String.Join(",", Model.BrandModel.brandName.Select(x => "'" + x + "'")))];
+        var indexArrayOfBrand = [@Html.Raw(String.Join(",", Model.BrandModel.brandIndex.Select(x => "'" + x + "'")))];
+        var app = new Application();
+        app.setHomeMenuEntry(new HomeMenuEntry(myArray1, listBrandName, indexArrayOfBrand));
+        app.setPhotoStream(new PhotoStream($("#page-wrapper"), main_item_callback, $("#searchResults"), 0));
+        app.setSearchLogic(new SearchLogic());
+        app.setBackgroundDrawer(new BackgroundDrawer());
+        window.onload = app.getBackgroundDrawer().drawMidMenu();
+        app.setSideToolKit(new SideToolKitEntry());
+        app.getPhotoStream().layout_all();
+
+        $(function () {
+            app.initialize();
+            app.autoComplete($('#strInput'), '@Url.Action("AutoComplete", "MWHome")', 2);
+            app.bindFuncToElem($('#profile_save_btn'), 'click', SaveProfile);
+            app.bindFuncToElem($('#search'), 'click', SearchWithInput);
+            app.bindFuncToElem($('#tag-next'), 'click', NextTag);
+            app.bindFuncToElem($('#tag-prev'), 'click', PrevTag);
+            app.bindFuncToElem($('.cat'), 'click', CatSearch);
+            app.bindFuncToElem($('#MenuClear'), 'click', ClearConditions);
+            app.bindFuncToElem($('.dropdown-menu .sort'), 'click', SortSearchResult);
+            app.bindFuncToElem($('.newest'), 'click', NewestResult);
+            app.bindFuncToElem($('.discount'), 'click', DiscountResult);
+            app.bindFuncToElem($('#shift_left'), 'click', ShiftSearchResultLeft);
+            app.bindFuncToElem($('#shift_right'), 'click', ShiftSearchResultRight);
+
+            loginSetup();
+            login();
+            createAccount();
+            //facebookLoginSetup();
+
+            window.onscroll = function (event) {
+
+                if (app.sl.specialSearch) {
+                    if ($(document).height() <= $(window).scrollTop() + $(window).height()) {
+                        var search_args = app.getSearchLogic().discountSearch();
+                        app.getPhotoStream().search(search_args, true);
+                    }
+                } else {
+                    if ($(document).height() <= $(window).scrollTop() + $(window).height()) {
+                        var search_args = app.getSearchLogic().ConditionInputSearch(false, null, null, $("#strInput").val());
+                        app.getPhotoStream().search(search_args, true);
+                    }
+                }
+            };
+
+            window.onresize = function (event) {
+                app.getPhotoStream().layout_all();
+                var InfoWidth = $("#SP-list").width() - 152;
+                $('.sp-list-info').width(InfoWidth);
+            };
+            $("#home-createAccount").click(function () {
+                $("#createMyWardrobe").modal('show');
+                $(".modal-backdrop.in").css({
+                    "filter": "alpha(opacity=50)",
+                    "opacity": ".5"
+                });
+                $("#bottom-tools-border").hide();
+
+            });
+            $("#home-login").click(function () {
+                $("#myModal").modal('show');
+                $(".modal-backdrop.in").css({
+                    "filter": "alpha(opacity=50)",
+                    "opacity": ".5"
+                });
+                $("#bottom-tools-border").hide();
+            });
+            $("#createMyWardrobe").on('hidden.bs.modal', function () {
+                $("#bottom-tools-border").show();
+            });
+
+            $("#myModal").on('hidden.bs.modal', function () {
+                $("#bottom-tools-border").show();
+                $('.login-incorrect-tips').hide();
+            });
+
+            $(".dropdown-menu .scene").click(function () {
+                var sceneName = $(this).attr("data-scene");
+                var sceneShowName = $(this).html();
+                $("#Scene").attr("data-scene", sceneName);
+                
+                $("#Scene").html(sceneShowName);
+            });
+        });
+    </script>
+}

@@ -1,0 +1,300 @@
+﻿#title {
+	font-size: 4.0em;
+}
+#myModal {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+#title-describe {
+	padding: 5px 0px 0px 0px;
+	font-size: 1.1em;
+}
+
+#mw-search-button-group {
+	margin: 5px 0px 0px 0px;
+}
+
+.vertically-center {
+	/* float: none; */
+	display: table-cell;
+	vertical-align: middle;
+	height: 600px;
+}
+
+.mw-clear {
+	clear: both;
+}
+
+.mw-button-group-up-margin {
+	margin-top: 3px;
+}
+
+.mv-button-group-down-margin {
+	margin-bottom: 3px;
+}
+
+.margin {
+	margin-left: 5px;
+}
+.form-group {
+  /*display: table;
+  width: 100%;*/
+}
+  
+.column {
+    height: 100%;   
+}
+
+.center{
+    text-align:center;
+}
+#fontSize {
+    font-size:12px;
+    text-align:center;
+}
+
+.popup-group-input[type="text"]
+{
+    height: 37px;
+    /*border: 1px solid #555;*/ 
+    
+    
+    color:#555;
+    border-radius: 0px;
+    margin-top: 35px;
+}
+
+.popup-group-input[type="password"]
+{
+    height: 37px;
+    /*border: 1px solid #555; */
+
+    color:#555;
+    border-radius: 0px;
+    margin-top: 24px;
+}
+
+
+.popup-group-input
+{
+    margin: 0 auto;
+    color:#555555;
+    font-size: 13px;
+    width: 262px;
+    opacity: 1;
+}
+
+.popup-group-input-text
+{
+    font-size: 12px;
+    padding-left: 1px;
+}
+
+.popup-group-checkbox {
+    color: #555;
+}
+
+.popup-group {
+    margin: 0 auto;
+    width: 344px;
+}
+
+
+.Login-title{
+    margin-left:48px;
+    width:210px;
+    margin-top: 18px;
+    color:#111111;
+    font-family:'Century Gothic';
+    font-size:15px;
+    letter-spacing:0.05em;
+}
+
+.header-text
+{
+    text-align: left;
+    color:#111;
+    font-size:16px;
+    font-weight: 700;
+}
+
+.close-btn
+{
+    margin-top:10px;
+    margin-right:10px;
+    color:#111111;
+    font-size:16px;
+    font-family: 'Century Gothic';
+    background-color:transparent;;
+    border:none;
+}
+
+.header-text
+{
+
+    height: 140px;
+}
+
+.button
+{
+    text-align: center;
+    height: 200px;
+    margin-bottom: 0px;
+}
+
+.checkbox
+{
+    color:#555;
+    margin-top: 18px;
+}
+
+.checkbox-text
+{
+    padding-top: 2px;
+}
+
+
+.login-button-text
+{
+    font-size:15px;
+    font-weight: 400;
+    font-family: Century Gothic;
+    /*color: #111111;*/
+    color: #fff;
+   
+}
+
+.facebook-button
+{
+    width:256px;
+    height:32px;
+    background-color:#3b5998;
+    border: 1px solid black;
+    border-radius:10px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 12px;
+    margin-top: 7px;
+}
+
+.bizInfo {
+    width: 269px;
+    margin: 0 auto;
+    margin-top: 18px;
+    font-size: 12px;
+    color: #555555;
+}
+.bizInfo a {
+    color:#555555;
+    text-decoration:none;
+    font-weight:600;
+}
+.login-group {
+    position:relative;
+    width:240px;
+    height: 50px;
+    margin-left:60px;
+    margin-top:28px;   
+    font-size: 13px;
+}
+.login-text-tips {
+    width: 150px;
+    position: absolute;
+    top: 1px;
+    left: 0px;
+    margin: 0px;
+    line-height: 19px;
+}
+.login-text-tips p {
+    color:#555555;
+}
+.login-text-tips  a{
+    color:#a3a3a3;                  
+}
+.login-button
+{   
+    position:absolute;
+    width:78px;
+    height:41px;
+    right:0px;
+    background-color:#555;
+    border-radius:10px;
+    padding:0px;
+    color:#ffffff;
+}
+.login-button:hover
+{
+    text-decoration: none;
+    color: #fff;
+}
+
+#login-popup {
+    position: absolute;
+    width: 344px;
+    top: 50%;
+    margin-top: -282px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+#login-popup-heading {
+    width: 344px;
+    height: 102px;
+    background-color: #fff;
+    border-radius: 10px;
+    opacity:0.9;
+    border: 1px solid white;
+    border-bottom:none;
+}
+
+#login-popup-content{
+    width:344px;
+    height:360px;
+    background-color:#fff;
+    background-color:rgba(255,255,255,0.9);
+    border-radius:10px;
+    border: 1px solid #fff;
+    border-top:none;
+    font-family:'Century Gothic'!important;
+}
+
+.dotted-line-login {
+    width: 253px;
+    height: 1px;
+    border-top: 1px #555555 dotted;
+}
+.login-social-btn {
+    margin-left:48px;
+}
+.login-social-btn >img{
+    border-radius:5px;
+}
+.text-tips-Login {
+    color:#111111;
+    font-size:15px;
+    margin-left:48px;
+    margin-top:15px;
+    margin-bottom:0px;
+}
+.Login-input {
+    font-size:13px;
+    color:#444444;
+    margin-left:41px;
+    padding:6px 7px;
+    width: 260px;
+    height: 36px;
+    border-radius: 0px;
+    border: 1px solid #555;
+}
+.login-incorrect-tips {
+    font-size:11px;
+    color: #ee5858;
+    margin-left: 48px;
+    margin-bottom: 0;
+    margin-top:5px;
+    display:none;
+}
+.third_button {
+    cursor: pointer;
+}

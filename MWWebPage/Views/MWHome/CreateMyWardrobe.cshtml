@@ -1,0 +1,83 @@
+﻿@model MWWebPage.Models.LoginContext
+
+
+<div id="my-wardrobe-popup" class="center-block">
+    <button type="button" class="btn  pull-right close-button" id="close-popup" data-dismiss="modal"><span class="x-button">X</span></button>
+    <div id="create-wardrobe-popup">
+
+        <p class="text-center" id="my-wardrobe-popup-heading"><b>Create My Wardrobe</b></p>
+        <form role="form">
+            <div class="form-group change-gap-height">
+                <label for="inputEmail" class="control-label my-wardrobe-popup-label">E-mail</label>
+                <input type="email" class="center-block form-control input-change" id="inputEmail" placeholder="E-mail">
+            </div>
+            <div class="form-group change-gap-height">
+                <label class="control-label my-wardrobe-popup-label" for="inputPassword">Password</label>
+                <input type="password" class="center-block form-control input-change" id="inputPassword3" placeholder="Password">
+            </div>
+            <div class="form-group change-gap-height">
+                <label class="control-label my-wardrobe-popup-label" for="inputGender">Gender</label>
+                <select class="center-block form-control select-change" id="inputGender">
+                    <option class="" value="">Selected</option>
+                    <option class="" value="Male">Male</option>
+                    <option class="" value="Female">Female</option>
+                    <option class="" value="Other">Other</option>
+                </select>
+            </div>
+            <div class="form-group change-gap-height">
+                <label class="control-label my-wardrobe-popup-label" for="inputBirthday">Birthday</label>
+                <div id="date">
+                    <div>
+                        <select id="BirthdayDay" class="form-control modify-day-year">
+                            <option value="Day">Day</option>
+
+                        </select>
+                    </div>
+                    <div>
+                        <select id="BirthdayMonth" class="form-control modify-month">
+                            <option value="0">Mon</option>
+                           
+                        </select>
+                    </div>
+                    <div>
+                        <select id="BirthdayYear" class="form-control modify-day-year">
+                            <option selected="" value="Year">Year</option>
+                            
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label my-wardrobe-popup-label" for="inputLocation">Location</label>
+                <select class="center-block form-control select-change" id="inputLocation">
+                    <option value="Melbourne">Melbourne</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p class="text-agreepolicy">By clicking 'Create', you agree to our Privacy & Terms and that you have read our Policy.</p>
+            </div>
+            <div class="form-group">
+                <button type="button" class="center-block btn  change-button1"><span class="text-on-button">Create my wardrobe</span></button>
+            </div>
+            <div class="form-group text-bussiness-design pull-right">
+                <a href="#">Are you a bussiness or designer?<br /><b>Get started here.</b></a>
+            </div>
+        </form>
+
+    </div>
+
+
+    <div id="sign-facebook-popup">
+        <div class="dotted-line center-block"></div>
+        <form role="form">
+            <div class="form-group pull-right text-login">
+                <a href="#" id="active-login">Already have an account? <b>Login</b></a>
+            </div>
+            <div class="form-group">
+                <button type="button" class="center-block btn change-button2"><img id="iconfacebook" src="~/Images/facebook.png" alt="facebook" height="20" width="20"><span class="text-on-button-signfacebook">Sign in with facebook</span></button>
+            </div>
+        </form>
+    </div>
+
+</div>
+

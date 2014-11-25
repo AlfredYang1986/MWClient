@@ -1,0 +1,35 @@
+﻿@model IEnumerable<MWWebPage.Models.ItemGroup>
+@using MvcGlobalisationSupport;
+@using MWWebPage.Resources;
+
+@{
+    int tag_outfit_count = 0;
+    foreach (var it in Model) { tag_outfit_count += it.outfits.Count(); }
+}
+<div id='W-second-items-tag' data-itemType="outfit">
+    <label id="WS-itemTags" data-tagid=""></label>
+    <span id="WS-itemNum">@tag_outfit_count</span>
+    <select id="W-second-items-sortby">
+        <option value="Time">@Global.time</option>
+    </select>
+</div>
+<div id="W-second-allItems">
+    @foreach (var outfitgroup in Model)
+    {
+        <div class="W-second-showItems">
+            <label>@outfitgroup.groupKey</label>>><span>@outfitgroup.outfits.Count()</span>
+            <div class="W-second-sortItem">
+                @foreach (var outfit in outfitgroup.outfits)
+                {
+
+                    <div class="W-second-eachOutfit">
+                        <img src="@outfit.outfitPic" alt="@outfit.outfitName" data-outfitid="@outfit.outfitId" data-outfittime="@outfit.outfitTime" />
+                        <button class="WS-deleteOutfitTag-btn">X</button>
+                    </div>
+
+                }
+            </div>
+        </div>
+    }
+</div>
+

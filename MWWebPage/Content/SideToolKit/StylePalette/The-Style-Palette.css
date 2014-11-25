@@ -1,0 +1,197 @@
+﻿#Sp-Pane
+{
+	position:absolute;
+    top:66px;
+    right:3px;
+    /*width:425px; 
+	height:690px;*/
+    width: 33.3%;
+    height: 91.5%;
+    border-left:6px solid #F3F3F1;
+	border-bottom:15px solid #F3F3F1;
+    display:none;
+    z-index:16;
+    background-color:#fcfcfc;
+}
+#Sp-Pane-Top-Button img{
+    vertical-align:top;
+}
+.The-style-palette-topbutton {
+    /*margin-top:60px;
+    margin-left:70px;*/
+    margin-top: 14%;
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.The-style-palette-topbutton button{
+    font-size:12px;
+    color:#000000;
+	background-color: transparent;
+    padding:0;
+    border:none;
+    margin-left:6px;
+    margin-right:6px;
+}
+
+.The-style-palette-list
+{
+	width:100%; 
+	height:570px;
+  	margin-left:2px;
+    overflow-y:auto;
+    display:none;
+}
+#The-style-palette-addfromwardrobe
+{
+	/*width:420px; 
+	height:570px;*/
+    height:81%;
+  	margin-left:2px;
+ 	border:none;
+  	
+}
+.The-style-palette-recommend
+{
+	position:absolute;
+  	right:2px;
+  	bottom:5px;
+  	width:105px;
+    height:625px;
+  	border-left:1px solid black;
+  	border-right:1px solid black;
+    display:none;
+}
+#The-style-palette-shot
+{
+	width:100%;
+    font-weight:bold;
+    font-size:14px;
+    height:35px;
+}
+.SP-list-hover-bg {
+    background-color:gray !important;
+}
+.SP-function-btn {
+    width:20px;
+    height:20px;
+    background-color:#fcfcfc;
+    padding:0px;
+    border-radius:0px;
+    display:block;
+    margin-top:5px;
+}
+.SP-border {
+    border:1px solid rgb(79, 187, 249);
+}
+.sp_select {
+    background-image:url(/Images/home/SELECT.svg);
+    background-repeat:no-repeat;
+    background-size:80% 80%;
+    background-position:center;
+}
+.sp_cut {
+    background-image:url(/Images/home/fold.svg);
+    background-repeat:no-repeat;
+    background-size:80% 80%;
+    background-position:center;
+}
+.sp_restore {
+    background-image:url('/Images/home/cancel2.svg');
+    background-repeat:no-repeat;
+    background-size:80% 80%;
+    background-position:center;
+}
+.sp_top {
+    
+}
+.sp_delete {
+    background-image:url('/Images/home/delete.svg');
+    background-repeat:no-repeat;
+    background-size:80% 80%;
+    background-position:center;
+}
+#recommend-content {
+    position: absolute;
+    width: 700px;
+    height: 288px;
+    top: 50%;
+    margin-top: -150px;
+    left: 35%;
+    margin-left: -300px;
+    background-color: white;
+    border-bottom:3px solid #ccc;
+    border-right:3px solid #ccc;
+}
+#recommendInfo-wrap {
+    padding:10px;
+}
+.recommend-label {
+    font-size: 12px;
+    color: #000000;
+    display: inline-block;
+    margin: 0px;
+    position: relative;
+    top: -10px;
+}
+.styled-select select {
+    background: transparent;
+    width: 239px;
+    padding: 5px;
+    font-size: 12px;
+    line-height: 1;
+    border: 0;
+    border-radius: 0;
+    height: 30px;
+    -webkit-appearance: none;
+    outline: 0;
+}
+.styled-select {
+    width: 240px;
+    height: 30px;
+    overflow: hidden;
+    background: url('/Images/home/down-black.svg') no-repeat right white;
+    border: 1px solid #ccc;
+    display: inline-block;
+    margin-left:20px;
+}
+.recommend-title {
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-top: 15px;
+    height: 45px;
+    border-bottom: 1px dotted #000000;
+}
+.recomend-waterfall-container {
+    border: 1px solid #ccc;
+    height: 180px;
+    width: 607px;
+    margin-left: 35px;
+    margin-top: 15px;
+}
+.recomend-left-btn {
+    position: absolute;
+    width: 20px;
+    height: 30px;
+    left: 13px;
+    top: 152px;
+    background-image: url('/Images/home/left-gray.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+.recomend-right-btn {
+    position: absolute;
+    width: 20px;
+    height: 30px;
+    right: 20px;
+    top: 153px;
+    background-color:transparent;
+    background-image: url('/Images/home/right-gray.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    padding: 0;
+}

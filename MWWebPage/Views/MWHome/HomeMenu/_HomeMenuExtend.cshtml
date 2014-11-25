@@ -1,0 +1,98 @@
+﻿@using MvcGlobalisationSupport;
+@using MWWebPage.Resources;
+@model MWWebPage.Models.HomeModelContext
+
+
+@section css {
+      
+}
+<span id="text-logo" class="fix-to-top">@Global.logo</span>
+<!--gender select css but not used-->
+@*<span id="sex-condition" class="fix-to-top">
+    <img border="0" src="../Images/male.gif" alt="male" width="30" height="30">
+</span>*@
+<button type="button" class="scenario-switch fix-to-top">
+    <span class="glyphicon glyphicon-transfer"></span>
+</button>
+<div class="input-group search-group fix-to-top">
+<div class="scenario-searchAdd">
+    <div class="btn-group search-select" >
+        <button data-toggle="dropdown" class="btn dropdown-toggle clean-btn" id="Scene" data-scene="">@Global.scene <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+            @foreach (var scene in @Model.SecenceModel.scence)
+            {
+                <li><a href="#" data-scene="@scene" class="scene" >@scene</a></li>
+            }
+        </ul>
+    </div>
+    <div class="btn-group search-select" style="left:81px;">
+            <button data-toggle="dropdown" class="btn dropdown-toggle clean-btn">@Global.time <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+                <li><a href="#">Winter</a></li>
+                <li><a href="#">Summer</a></li>
+            </ul>
+    </div>
+    </div>
+    <input id="strInput" type="text" style="padding-left:150px;z-index:500" class="form-control" name="strInput" value="@ViewBag.OriginSearchString">
+    <span class="input-group-btn">
+        <button id="search" class="btn search-btn" style="height:35px;"><i class="glyphicon glyphicon-search"></i></button>
+    </span>
+</div>
+
+@if (ViewBag.LogIn == "True")
+{ 
+     <div class="right-tool fix-to-top">
+        <div class="PF" style=" display: inline-block;position:relative;margin:0 5px;">
+            <div id="Pf-tip" class="right-tool-tip">@Global.PrsnlCenter</div>
+            <button id="Pf-btn" class="circle-button" style="background-color:#33353c; ">
+                <img src="~/Images/home/PrsnlCenter.svg" width="25" height="25">
+            </button>
+        </div>
+        <div class="SP" style="display: inline-block;position:relative; margin:0 5px;">
+            <div id="Sp-tip"class="right-tool-tip">@Global.stylePallet</div>
+            <button id="Sp-btn" class="circle-button" style="background-color: #33353c; " >
+                <img src="~/Images/home/StylePalette.svg" width="25" height="25">
+            </button>
+        </div>
+        <div class="MW" style="display: inline-block;position:relative; margin:0 5px;">
+            <div id="Mw-tip" class="right-tool-tip">@Global.wardrobe</div>
+            <button id="Mw-btn" class="circle-button" style="background-color: #33353c;">
+                <img src="~/Images/home/Wardrobe.svg" width="25" height="25">
+            </button>
+        </div>
+    </div>
+}
+else
+{
+    <div class="right-top fix-to-top" >
+        <a href="#" id="home-createAccount">@Global.createAccount</a>
+        <a href="#" id="home-login" style="margin-left:13.9%;">@Global.login</a>
+    </div>
+}
+
+
+<div class="broardcast-btns fix-to-top home-font ">
+    <button type="button" class="text-btn-broardcast newest home-font resize-font">@Global.newest</button>
+    <button type="button" class="text-btn-broardcast discount home-font resize-font">@Global.discount</button>
+    <div id="block-cover"></div>
+</div>
+
+<div class="btn-group fix-to-top" id="sort-by">
+    <button type="button" disabled class="sortby-btn home-font resize-font" style="width: 51px; ">@Global.sort</button>
+    <button type="button" class="sortby-btn dropdown-toggle home-font resize-font" data-toggle="dropdown" style="margin-left: -4px;width:100px; background-color: #ffffff;">
+        <span id="sort" data-sortinfo="Price Down">@Global.priceDown</span>
+    </button>
+    <ul class="dropdown-menu resize-font" role="menu" style="color: #555555; background-color: #ffffff; min-width: 148px; font-size: 12px">
+        <li id="price_down"><a href="#" id="price_down_link" class="sort" data-sort="Price Down">@Global.priceDown</a></li>
+        <li id="price_up"><a href="#" id="price_up_link" class="sort" data-sort="Price Up">@Global.priceUp</a></li>
+        <li id="brand_down"><a href="#" id="brand_link" class="sort" data-sort="Brand Down">@Global.brandDown</a></li>
+        <li id="brand_up"><a href="#" id="brand_link" class="sort" data-sort="Brand Up">@Global.brandUp</a></li>
+        <li id="category_down"><a href="#" id="category_link" class="sort" data-sort="Category Down">@Global.catDown</a></li>
+        <li id="category_up"><a href="#" id="category_link" class="sort" data-sort="Category Up">@Global.catUp</a></li>
+    </ul>
+    <button id="shift_left" class="shift-btn home-font resize-font"><<</button>
+    <button id="shift_right" class="shift-btn  home-font resize-font" style="display: none;">>></button>
+</div>
+
+@Html.Partial("~/Views/MWAuthorization/CreateMyWardrobe.cshtml")
+@Html.Partial("~/Views/MWAuthorization/_LoginInDialog_Auth.cshtml")

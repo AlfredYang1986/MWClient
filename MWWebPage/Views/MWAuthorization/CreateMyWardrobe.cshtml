@@ -1,0 +1,94 @@
+﻿
+@using MvcGlobalisationSupport;
+@using MWWebPage.Resources;
+<div id="createMyWardrobe" class="modal" tabindex="-1" role="dialog" >
+    <div id="my-wardrobe-popup" class="">
+        <button type="button" class="btn x-button" id="close-popup" data-dismiss="modal">x</button>
+        <div id="create-wardrobe-popup">
+            <p id="my-wardrobe-popup-heading" class="text-center regist-font">@Global.createAccount</p>
+            <form role="form">
+                <div class="form-group change-gap-height">
+                    <label for="inputEmail" class="control-label  my-wardrobe-popup-label Hiddenlable">
+                        @Global.email
+                        <span id="regist-tip-email" class="pull-right regist-font">@Global.emailError</span>
+                    </label>
+
+                    <input type="email" class="center-block form-control input-change regist-font" id="inputEmail" placeholder='@Global.email'>
+
+                    @*<label  class="control-label  regist-email-tip">correct</label>*@
+                </div>
+                <div class="form-group change-gap-height">
+                    <label class="control-label my-wardrobe-popup-label Hiddenlable" for="inputPassword">
+                        @Global.password
+                        <span id="regist-tip-password" class="pull-right regist-font">@Global.passwordTooShort</span>
+                    </label>
+                    <input type="password" class="center-block form-control input-change regist-font" id="inputPassword" placeholder="@Global.password">
+                </div>
+                <div class="form-group change-gap-height">
+                    <label class="control-label my-wardrobe-popup-label" for="inputGender">@Global.gender</label>
+                    <select class="center-block form-control select-change regist-font" id="inputGender">
+                        <option class="" value="">@Global.genderSelected</option>
+                        <option class="" value="Male">@Global.genderMale</option>
+                        <option class="" value="Female">@Global.genderFemale</option>
+                        <option class="" value="Other">@Global.other</option>
+                    </select>
+                </div>
+                <div class="form-group change-gap-height">
+                    <label class="control-label my-wardrobe-popup-label " for="inputBirthday">@Global.birthday</label>
+                    <div id="date">
+                        <div>
+                            <select id="BirthdayDay" class="form-control modify-day-year regist-font">
+                                <option value="">@Global.day</option>
+                            </select>
+                        </div>
+                        <div>
+                            <select id="BirthdayMonth" class="form-control modify-month modify-day-year regist-font">
+                                <option value="">@Global.month</option>
+                            </select>
+                        </div>
+                        <div>
+                            <select id="BirthdayYear" class="form-control modify-day-year regist-font">
+                                <option selected="" value="">@Global.year</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label my-wardrobe-popup-label" for="inputLocation">@Global.location</label>
+                    <select class="center-block form-control select-change" id="inputLocation">
+                        <option value="Melbourne">@Global.locationMel</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p class="text-agreepolicy resize-font">@Global.hitCreateAccount <a href="#">@Global.privacyAndTerms </a>@Global.hitRead <a href="#">@Global.policy</a>.</p>
+                </div>
+                <div class="form-group">
+                    <button type="button" id="createAccount" class="center-block btn  change-button1"><span class="text-on-button">@Global.createAccount</span></button>
+                </div>
+                <div class="form-group text-bussiness-design pull-right regist-font">
+                    <a href="#">@Global.busOrDes<br /><b>@Global.startHere</b></a>
+                </div>
+            </form>
+        </div>
+
+
+        <div id="sign-facebook-popup">
+            <div class="dotted-line center-block"></div>
+            <form role="form">
+                <div class="form-group pull-right text-login regist-font resize-font">
+                    <span>@Global.alreadyUser</span>
+                    <a href="#" id="active-login"> <b>@Global.login</b></a>
+                </div>
+                @*<div class="form-group">
+
+                        <button type="button" class="center-block btn change-button2"><img id="iconfacebook" src="~/Images/facebook.png" alt="facebook" height="20" width="20"><span class="text-on-button-signfacebook">Sign in with facebook</span></button>
+                    </div>*@
+                <div class="form-group pull-right regist-login-with">
+                    <span>@Global.thirdLogin</span>
+                    <img src="../../Images/Login/facebook_icon.jpg" alt="" width="28" height="28" style="" />
+                    <img src="../../Images/Login/Twitter.png" alt="" width="28" height="28" style="" />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

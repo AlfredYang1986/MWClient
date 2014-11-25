@@ -1,0 +1,8 @@
+﻿@model List<MWWebPage.Models.Tags>
+<span>Choose a tag</span>
+<select id="selectedTag">
+    @foreach (var tag in Model)
+    {
+        <option value="@tag.tagId">@tag.tagName</option>
+    }
+</select>

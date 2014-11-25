@@ -1,0 +1,472 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="add" xml:space="preserve">
+    <value>添加</value>
+  </data>
+  <data name="addFromMW" xml:space="preserve">
+    <value>从衣柜添加</value>
+  </data>
+  <data name="addFromPC" xml:space="preserve">
+    <value>从本地添加</value>
+  </data>
+  <data name="alreadyUser" xml:space="preserve">
+    <value>老用户</value>
+  </data>
+  <data name="askNoMore" xml:space="preserve">
+    <value>不再询问我</value>
+  </data>
+  <data name="badToken" xml:space="preserve">
+    <value>token 过期</value>
+  </data>
+  <data name="birthday" xml:space="preserve">
+    <value>生日</value>
+  </data>
+  <data name="brand" xml:space="preserve">
+    <value>品牌</value>
+  </data>
+  <data name="brandDown" xml:space="preserve">
+    <value>品牌高到低</value>
+  </data>
+  <data name="brandUp" xml:space="preserve">
+    <value>品牌低到高</value>
+  </data>
+  <data name="busOrDes" xml:space="preserve">
+    <value>如果你是商户或者设计师</value>
+  </data>
+  <data name="bussineAndDesign" xml:space="preserve">
+    <value>商户和设计师</value>
+  </data>
+  <data name="cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="capAdd" xml:space="preserve">
+    <value>添加到</value>
+  </data>
+  <data name="capAll" xml:space="preserve">
+    <value>全部</value>
+  </data>
+  <data name="capBrand" xml:space="preserve">
+    <value>品牌</value>
+  </data>
+  <data name="capBudget" xml:space="preserve">
+    <value>价格</value>
+  </data>
+  <data name="capCategory" xml:space="preserve">
+    <value>种类</value>
+  </data>
+  <data name="capClear" xml:space="preserve">
+    <value>清空</value>
+  </data>
+  <data name="capColor" xml:space="preserve">
+    <value>颜色</value>
+  </data>
+  <data name="capDelete" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="capDone" xml:space="preserve">
+    <value>成功</value>
+  </data>
+  <data name="capMoveTo" xml:space="preserve">
+    <value>移动到</value>
+  </data>
+  <data name="capSelected" xml:space="preserve">
+    <value>已选</value>
+  </data>
+  <data name="capTag" xml:space="preserve">
+    <value>标签</value>
+  </data>
+  <data name="capUpload" xml:space="preserve">
+    <value>上传</value>
+  </data>
+  <data name="catDown" xml:space="preserve">
+    <value>种类高到低</value>
+  </data>
+  <data name="category" xml:space="preserve">
+    <value>种类</value>
+  </data>
+  <data name="catUp" xml:space="preserve">
+    <value>种类低到高</value>
+  </data>
+  <data name="change" xml:space="preserve">
+    <value>转换</value>
+  </data>
+  <data name="changePic" xml:space="preserve">
+    <value>更换图片</value>
+  </data>
+  <data name="chinese" xml:space="preserve">
+    <value>中文</value>
+  </data>
+  <data name="chooseTag" xml:space="preserve">
+    <value>选择一个标签</value>
+  </data>
+  <data name="close" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="comment" xml:space="preserve">
+    <value>留言</value>
+  </data>
+  <data name="confirm" xml:space="preserve">
+    <value>确认</value>
+  </data>
+  <data name="createAccount" xml:space="preserve">
+    <value>创建衣橱</value>
+  </data>
+  <data name="createNewTag" xml:space="preserve">
+    <value>创建一个标签</value>
+  </data>
+  <data name="day" xml:space="preserve">
+    <value>日</value>
+  </data>
+  <data name="discount" xml:space="preserve">
+    <value>打折</value>
+  </data>
+  <data name="discription" xml:space="preserve">
+    <value>描述</value>
+  </data>
+  <data name="edit" xml:space="preserve">
+    <value>编辑</value>
+  </data>
+  <data name="email" xml:space="preserve">
+    <value>邮件</value>
+  </data>
+  <data name="emailError" xml:space="preserve">
+    <value>格式错误</value>
+  </data>
+  <data name="english" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="enter" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="explore" xml:space="preserve">
+    <value>逛逛</value>
+  </data>
+  <data name="forgetPassword" xml:space="preserve">
+    <value>忘记密码</value>
+  </data>
+  <data name="forgetPwd" xml:space="preserve">
+    <value>忘记密码</value>
+  </data>
+  <data name="gender" xml:space="preserve">
+    <value>性别</value>
+  </data>
+  <data name="genderFemale" xml:space="preserve">
+    <value>女</value>
+  </data>
+  <data name="genderMale" xml:space="preserve">
+    <value>男</value>
+  </data>
+  <data name="genderSelected" xml:space="preserve">
+    <value>选择</value>
+  </data>
+  <data name="helpCenter" xml:space="preserve">
+    <value>帮助</value>
+    <comment>Landing Page 3</comment>
+  </data>
+  <data name="hitCreateAccount" xml:space="preserve">
+    <value>点击创建</value>
+  </data>
+  <data name="hitRead" xml:space="preserve">
+    <value>并且阅读</value>
+  </data>
+  <data name="image" xml:space="preserve">
+    <value>图片</value>
+  </data>
+  <data name="index" xml:space="preserve">
+    <value>着陆页</value>
+    <comment>Landing Page 1</comment>
+  </data>
+  <data name="input" xml:space="preserve">
+    <value>输入</value>
+  </data>
+  <data name="instruction" xml:space="preserve">
+    <value>简介</value>
+    <comment>Landing Page 2</comment>
+  </data>
+  <data name="learnMore" xml:space="preserve">
+    <value>了解更多</value>
+  </data>
+  <data name="list" xml:space="preserve">
+    <value>列表</value>
+  </data>
+  <data name="location" xml:space="preserve">
+    <value>位置</value>
+  </data>
+  <data name="locationMel" xml:space="preserve">
+    <value>墨尔本</value>
+  </data>
+  <data name="login" xml:space="preserve">
+    <value>登陆</value>
+  </data>
+  <data name="loginError" xml:space="preserve">
+    <value>账号或密码错误</value>
+  </data>
+  <data name="logo" xml:space="preserve">
+    <value>我的百万衣橱</value>
+  </data>
+  <data name="logOut" xml:space="preserve">
+    <value>登出</value>
+  </data>
+  <data name="month" xml:space="preserve">
+    <value>月</value>
+  </data>
+  <data name="mwOutFit" xml:space="preserve">
+    <value>套装</value>
+  </data>
+  <data name="mwSingleItem" xml:space="preserve">
+    <value>单品</value>
+  </data>
+  <data name="name" xml:space="preserve">
+    <value>名字</value>
+  </data>
+  <data name="nationality" xml:space="preserve">
+    <value>国籍</value>
+  </data>
+  <data name="newed" xml:space="preserve">
+    <value>新</value>
+  </data>
+  <data name="newest" xml:space="preserve">
+    <value>最新</value>
+  </data>
+  <data name="next" xml:space="preserve">
+    <value>下一步</value>
+  </data>
+  <data name="nickName" xml:space="preserve">
+    <value>用户名</value>
+  </data>
+  <data name="notification" xml:space="preserve">
+    <value>消息提醒</value>
+  </data>
+  <data name="occupation" xml:space="preserve">
+    <value>职业</value>
+  </data>
+  <data name="old" xml:space="preserve">
+    <value>旧</value>
+  </data>
+  <data name="other" xml:space="preserve">
+    <value>其它</value>
+  </data>
+  <data name="password" xml:space="preserve">
+    <value>密码</value>
+  </data>
+  <data name="passwordTooShort" xml:space="preserve">
+    <value>密码太短</value>
+  </data>
+  <data name="policy" xml:space="preserve">
+    <value>条款</value>
+  </data>
+  <data name="priceDown" xml:space="preserve">
+    <value>价格高到低</value>
+  </data>
+  <data name="priceUp" xml:space="preserve">
+    <value>价格低到高</value>
+  </data>
+  <data name="privacy" xml:space="preserve">
+    <value>条例</value>
+    <comment>Landing Page 4</comment>
+  </data>
+  <data name="privacyAndTerms" xml:space="preserve">
+    <value>隐私和条框</value>
+  </data>
+  <data name="proChange" xml:space="preserve">
+    <value>更改密码</value>
+  </data>
+  <data name="profile" xml:space="preserve">
+    <value>账号</value>
+  </data>
+  <data name="proHelp" xml:space="preserve">
+    <value>帮助</value>
+  </data>
+  <data name="proSetting" xml:space="preserve">
+    <value>设置</value>
+  </data>
+  <data name="purchase" xml:space="preserve">
+    <value>购买</value>
+  </data>
+  <data name="recommand" xml:space="preserve">
+    <value>推荐</value>
+  </data>
+  <data name="rememberMe" xml:space="preserve">
+    <value>记住我</value>
+  </data>
+  <data name="reset" xml:space="preserve">
+    <value>重设</value>
+  </data>
+  <data name="save" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="share" xml:space="preserve">
+    <value>分享</value>
+  </data>
+  <data name="shot" xml:space="preserve">
+    <value>拍照</value>
+  </data>
+  <data name="slogen" xml:space="preserve">
+    <value>发现身边的潮</value>
+  </data>
+  <data name="sn" xml:space="preserve">
+    <value>社交</value>
+  </data>
+  <data name="snwLogin" xml:space="preserve">
+    <value>社交网络登陆</value>
+  </data>
+  <data name="sort" xml:space="preserve">
+    <value>排序</value>
+  </data>
+  <data name="source" xml:space="preserve">
+    <value>来源</value>
+  </data>
+  <data name="startHere" xml:space="preserve">
+    <value>点击这里</value>
+  </data>
+  <data name="stylePallet" xml:space="preserve">
+    <value>搭配</value>
+  </data>
+  <data name="test" xml:space="preserve">
+    <value>测试</value>
+  </data>
+  <data name="thirdLogin" xml:space="preserve">
+    <value>三方登陆</value>
+  </data>
+  <data name="time" xml:space="preserve">
+    <value>时间</value>
+  </data>
+  <data name="title" xml:space="preserve">
+    <value>标题</value>
+  </data>
+  <data name="tokenExpired" xml:space="preserve">
+    <value>token 过期， 请执行上一步操作</value>
+  </data>
+  <data name="wardrobe" xml:space="preserve">
+    <value>衣橱</value>
+  </data>
+  <data name="year" xml:space="preserve">
+    <value>年</value>
+  </data>
+  <data name="budget" xml:space="preserve">
+    <value>价钱</value>
+  </data>
+  <data name="PrsnlCenter" xml:space="preserve">
+    <value>用户</value>
+  </data>
+  <data name="scene" xml:space="preserve">
+    <value>场景</value>
+  </data>
+</root>

@@ -1,0 +1,76 @@
+﻿@using MvcGlobalisationSupport;
+@using MWWebPage.Resources;
+
+@{
+    ViewBag.Title = @Global.forgetPassword;
+}
+
+<h2>Forget Password</h2>
+
+<p class="bg-success hidden">...</p>
+
+<p class="bg-warning hidden">...</p>
+
+<p class="bg-danger hidden">...</p>
+
+<div class="col-xs-offset-2 col-xs-5">
+    <div class="form-group has-feedback">
+        <label class="control-label" for="InputEmail">@Global.enter @Global.email</label>
+        <input type="text" class="form-control" id="InputEmail">
+        <span class="glyphicon form-control-feedback"></span>
+    </div>
+    <button id="sendEmail" class="btn btn-primary pull-right" disabled>@Global.reset</button>
+</div>
+
+@section scripts{
+    <script src="~/Scripts/Login/Login.js"></script>
+
+    <script type="text/javascript">
+        function InputDidChange() {
+            var ele = $('#InputEmail');
+            var strEmail = ele.val();
+            if (IsEmail(ele.val())) {
+                ele.parents('div').removeClass('has-warning');
+                ele.parents('div').addClass('has-success');
+                ele.parents('div').children('span').removeClass('glyphicon-warning-sign');
+                ele.parents('div').children('span').addClass('glyphicon-ok');
+                $('#sendEmail').removeAttr('disabled');
+            } else {
+                ele.parents('div').addClass('has-warning');
+                ele.parents('div').removeClass('has-success');
+                ele.parents('div').children('span').addClass('glyphicon-warning-sign');
+                ele.parents('div').children('span').removeClass('glyphicon-ok');
+                $('#sendEmail').attr('disabled', 'disabled');
+            }
+        };
+
+        $(function () {
+
+            $('#InputEmail')[0].addEventListener("textInput", InputDidChange, false);
+
+            $('#sendEmail').click(function () {
+                $.ajax({
+                    url: '@Url.Action("MailNotification", "ForgetPassword")',
+                    method: 'Get',
+                    dateType: 'json',
+                    contentType: 'application/json, charset=utf-8',
+                    data: {
+                        email: $('#InputEmail').val()
+                    },
+                    //beforeSend: function () {
+                    //    Loading();
+                    //},
+                    //complete: function () {
+                    //    hiddenLoading();
+                    //},
+                    success: function (data) {
+                        alert(data);
+                    },
+                    error: function (xhr, status, error) {
+                        alert(error);
+                    }
+                });
+            });
+        });
+    </script>
+}

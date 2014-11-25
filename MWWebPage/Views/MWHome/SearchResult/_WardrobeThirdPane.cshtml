@@ -1,0 +1,88 @@
+﻿@using MvcGlobalisationSupport;
+@using MWWebPage.Resources;
+
+<div id="Wardrobe-third-modal" class="modal" tabindex="-1" role="dialog">
+    <div id='W-Third-popup' class="">
+        <button type="button" id="close-SingleItem" class="btn" data-dismiss="modal"><span>X</span></button>
+        <div id="W-Third-left">
+            <div id="W-Third-leftTop">
+                <div id="W-Third-leftTop-TitleBrand">
+                    <div id="W-Third-leftTop-title" class="home-font">@Global.title</div>
+                    <div id="W-Third-leftTop-BP"><span id="W-Third-leftTop-brand" class="home-font">@Global.brand</span></div>
+                </div>
+                <div id="W-Third-leftTop-price" class="home-font">0</div>
+            </div>
+            <div id="W-Third-leftDown">
+                <div class="W-Third-itemComments">
+                    <div class="W-Third-userImg"><img src="..." alt="..." /></div>
+                    <div class="W-Third-userComment"><label>@Global.name</label><span>@Global.time</span><p>Color is nice!</p></div>
+                </div>
+                <div class="W-Third-itemComments">
+                    <div class="W-Third-userImg"><img src="..." alt="..." /></div>
+                    <div class="W-Third-userComment"><label>@Global.name</label><span>@Global.time</span><p>Color is nice!</p></div>
+                </div>
+                <div class="W-Third-itemComments">
+                    <div class="W-Third-userImg"><img src="..." alt="..." /></div>
+                    <div class="W-Third-userComment"><label>@Global.name</label><span>@Global.time</span><p>Color is nice!</p></div>
+                </div>
+                <div id="W-Third-commentClick">
+                    <button id="W-Third-commentBtn" class="home-font">@Global.comment</button>
+                </div>
+            </div>
+        </div>
+        @*<div id="viewDetaile-info">
+            <p id="viewDetaile-category" style="position:absolute; left:59px; top:318px;">category</p>
+            <p ></p>
+        </div>*@
+        <div id="W-Third-center">
+            <div id="W-Third-centerInfo">
+                @*<span id="W-Third-collectBtn"><i class ="glyphicon glyphicon-send"></i></span>*@
+                <button type="button" style="border:none; background-color:transparent; ">
+                    <img src="~/Images/home/collect.svg" height="11" width="13">
+                    <span id="W-collect-number">1999</span>
+                </button>       
+                <button type="button" id="W-Third-likeBtn">
+                    <img src="~/Images/home/like.svg" height="10" width="10">
+                    <em id="W-Third-like">1822</em>
+                </button>     
+                <button id="W-Third-itemshare">
+                    <img src="~/Images/home/share.svg" width="10" height="10">
+                    <span id="W-Third-shareBtn" class="home-font">@Global.share</span>
+                </button>
+                <button type="button" style="margin-left:15px; border:0px;background-color:transparent;">
+                    <img src=".." alt="" style="border-radius:2px;" />
+                    <span id="W-Third-srcBtn" class="home-font">@Global.source</span>
+                </button>
+                <a id="W-Third-buyBtn" target="_blank" href="#" class="pull-right home-font btn btn-link" >@Global.purchase</a>
+            </div>
+            <div id="W-Third-singleItem-size">
+                <img id="W-Third-SingleImg" src="..." alt="" data-itemId="" />
+            </div>
+            <div id="W-Third-small-items">
+                <button id="W-Third-smallitem-previous"><i class="glyphicon glyphicon-chevron-left"></i></button>
+                <button id="W-Third-smallitem-next"><i class="glyphicon glyphicon-chevron-right"></i></button>
+            </div>
+        </div>
+        <div id="W-Third-right">
+            <div id="W-Third-waterfall" style="padding-top: 9px;">
+                <div id="W-Third-waterfall-title">PARTY STUFF</div>
+                <div id="W-Third-waterfall-subtitle">Category</div>
+                <div id="W-Third-waterfall-images"></div>
+            </div>
+            <div id="W-Third-Sudoku">
+                <div id="W-Third-Sudoku-title">PARTY STUFF</div>
+                <div id="W-Third-Sudoku-subtitle">Category</div>
+                <div id="W-Third-Sudoku-images">
+                    @for (int i = 0; i < 3; i++)
+                    { 
+                        for (int j = 0; j < 3; j++)
+                        { 
+                            <div id="W-Third-Sudo-image"></div>
+                        }
+                    }
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
